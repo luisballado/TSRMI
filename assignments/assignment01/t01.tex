@@ -45,14 +45,16 @@
 
 \section*{Introducción} % Unnumbered section
 
-Los vehículos aéreos no tripulados (VANT) son aeronaves sin tripulación, en recientes años han tenido un gran número de aplicaciones donde la perspectiva aérea toma el principal rol, hablamos de mapeo de áreas para uso en topografia y en años recientes como vigilantes aereos. Las propuestas hoy en día son muy amplias, ya que dotar a un Vehículo Aéreo No Tripulado de cámaras y sensores hace posible tener diferentes aplicaciones, pero la mayoria de ellas se centra en actividades en cartografia.\\
+Los vehículos aéreos no tripulados (VANT) son aeronaves sin tripulación. En recientes años han tenido un gran número de aplicaciones dónde la perspectiva aérea toma el principal rol; hablamos de mapeo de áreas para uso en topografía y en años recientes como vigilantes aéreos.\\
 
-No es raro escuchar y observar a nuestro al rededor los drones para usos fotográficos, la visualización de prespectivas que solo las aves y fotografos en un helicoptero tenian el privilegio de observar.\\
+Las propuestas hoy en día son muy diversas, ya que dotar a un vehículo aéreo no tripulado de cámaras y sensores hace posible tener diferentes usos y aplicaciones. Pero la mayoria de ellas se centra en actividades en cartografía y toma de fotografías.\\
 
-Cada vez es necesaria la coordinación de multiples agentes para desempeñar actividades como el mapeo de areas y el dotar de autonomia a estos robots aereos.
+No es raro escuchar y observar a nuestro alrededor los drones para usos fotográficos, visualización de prespectivas que sólo las aves y fotografos en un helicóptero tenían el privilegio de observar.\\
+
+Cada vez es necesaria la coordinación de múltiples agentes para desempeñar actividades como el mapeo de áreas y el dotar de inteligencia a estos robots áereos.
 
 \begin{info} % Information block
-  Es importante conocer los alcances y proponer aplicaciones que generen valor agregado, es por ello que el interes en este tipo de robots aéreos nunca se ha desprendido de mí. Y buscaremos dentro del curso conocer sus alcances y la construcción de los multiples VANT's que podemos encontrar en la literatura como de ala fija o multi rotores.
+  Es importante conocer los alcances y proponer aplicaciones que generen valor agregado, es por ello que el interés en este tipo de robots aéreos ha crecido durante la última década. Buscaremos dentro del curso conocer sus alcances y la construcción de los multiples VANT's que podemos encontrar en la literatura.
 \end{info}
 
 %----------------------------------------------------------------------------------------
@@ -63,67 +65,70 @@ Cada vez es necesaria la coordinación de multiples agentes para desempeñar act
 
 Varias industrias tales como automotriz, medica, manufactura y aeroespacial requieren de robots para reemplazar las tareas de humanos en situaciones de peligro.\\
 
-Los Vehiculos No Tripulados (UAV - Unmanned autonomous vehicles) son desarrollados para el aire, tierra e incluso para el agua. Son usados para tareas de búsqueda y rescate, exploración en desastres, monitoreo de sustancias tóxicas, monitoreo de campos agrícolas, mapeo e inspección de terrenos, aplicaciones militares y de entretenimiento.\\
+Los Vehiculos No Tripulados (UAV - Unmanned autonomous vehicles) son desarrollados para el aire, tierra e incluso para el agua y usados para tareas de búsqueda y rescate, exploración en desastres, monitoreo de sustancias tóxicas, monitoreo de campos agrícolas, mapeo e inspección de terrenos, aplicaciones militares y de entretenimiento.\\
 
-Los multirotores, que forman parte de la familia de los Vertical Take-Off and Landing (VTOL), tienen una simplicidad a comparación a los helicópteros ya que los multicolores presentan menos complejidad mecánica, eléctrica y de control. El concepto principal de un helicóptero de un solo rotor o doble rotor es el mantener la velocidad de las propalas constante y cambiarlas para producir un movimiento de cabeceo (pitch) (rotación respecto del eje transversal del VANT) para tener un control y estabilización del VANT. Proceso que requiere una estructura mecánica precisa, sensores y técnicas de control.\\
+Los multirotores, que forman parte de la familia de los Vertical Take-Off and Landing (VTOL), tienen una simplicidad a comparación a los helicópteros ya que los multirotores presentan menos complejidad mecánica, eléctrica y de control. El concepto principal de un helicóptero de un sólo rotor o doble rotor es el mantener la velocidad de las propalas constante y cambiarlas para producir un movimiento de cabeceo (pitch) (rotación respecto del eje transversal del VANT) para tener un control y estabilización.\\
 
-Por otra parte, para realizar las maniobras en un vehículo multirotor, solo bastara en la variación de la velocidad de los motores.\\
+Por otra parte, para realizar las maniobras en un vehículo multirotor, sólo bastará en la variación de la velocidad de los motores.\\
 
-Un cuadricoptero, es un vehículo aero con cuatro rotores simétricos distribuidos alrededor de un centro. Todos los motores se dice que son iguales en términos de fuerza y generación de torque. Los movimientos de alabeo, cabeceo y guiñada son generados a partir de la variación de velocidad en los motores.\\
+Un cuadricóptero, es un vehículo áero con cuatro rotores, simétricos y distribuidos alrededor de un centro. Todos los motores deben ser iguales en términos de fuerza y generación de torque.
 
 %------------------------------------------------
-
+\newpage
 \subsection{Aplicaciones en vigilancia}
 
-Maecenas consectetur metus at tellus finibus condimentum. Proin arcu lectus, ultrices non tincidunt et, tincidunt ut quam. Integer luctus posuere est, non maximus ante dignissim quis. Nunc a cursus erat. Curabitur suscipit nibh in tincidunt sagittis. Nam malesuada vestibulum quam id gravida. Proin ut dapibus velit. Vestibulum eget quam quis ipsum semper convallis. Duis consectetur nibh ac diam dignissim, id condimentum enim dictum. Nam aliquet ligula eu magna pellentesque, nec sagittis leo lobortis. Aenean tincidunt dignissim egestas. Morbi efficitur risus ante, id tincidunt odio pulvinar vitae.
+Es de interés nacional el cuidar la soberanía energética y el petróleo cumple un factor en el actual gobierno. Nuevos departamentos para la vigilancia de ductos de PEMEX han surgido en los años recientes \href{https://www.gob.mx/sedena/prensa/sedena-guardia-nacional-y-seguridad-fisica-de-pemex-aseguran-87-000-litros-de-hidrocarburo-presuntamente-robado-en-hidalgo}{Subdirección de Salvaguardia Estratégica de PEMEX}. Agentes que patruyan zonas calientes en los horarios de flujo de los hidrocarburos son soluciones ineficientes ó tal vez más económicas. Es algo que se puede delegar a agentes con inteligencia computacional instrumentados con los sensores necesarios y lograr cubrir áreas de manera eficiente y rápida.\\
 
-Curabitur tempus hendrerit nulla. Donec faucibus lobortis nibh pharetra sagittis. Sed magna sem, posuere eget sem vitae, finibus consequat libero. Cras aliquet sagittis erat ut semper. Aenean vel enim ipsum. Fusce ut felis at eros sagittis bibendum mollis lobortis libero. Donec laoreet nisl vel risus lacinia elementum non nec lacus. Nullam luctus, nulla volutpat ultricies ultrices, quam massa placerat augue, ut fringilla urna lectus nec nibh. Vestibulum efficitur condimentum orci a semper. Pellentesque ut metus pretium lacus maximus semper. Sed tellus augue, consectetur rhoncus eleifend vel, imperdiet nec turpis. Nulla ligula ante, malesuada quis orci a, ultricies blandit elit.
+Recuerdo de mis clases de robótica en la universidad hace más de 10 años, ya se hablaba al respecto, también el observar la adquisiciones de los diferentes gobiernos en drones teleridigidos para la seguridad. Es claro que por muchos años las limitantes tecnológicas han sido factor de no tener buenos productos, pero año con año esta brecha es reducida.\\
 
-% Numbered question, with subquestions in an enumerate environment
-\begin{question}
-	Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel justo vitae lacus tincidunt ultrices. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+\begin{figure}[h]
+\includegraphics[width=10cm]{pictures/drone_box.jpg}
+\centering
+\end{figure}
 
-	% Subquestions numbered with letters
-	\begin{enumerate}[(a)]
-		\item Do this.
-		\item Do that.
-		\item Do something else.
-	\end{enumerate}
-\end{question}
-	
+No es justo ver las declaraciones de cuánto se gasta en la adqusición de un nuevo drone en cualquier gobierno. Confío que se puede lograr cosas interesantes con la inversión y realización de buenos productos con la sinergia gobierno-academia. 
+
+\mybox{Ventajas}{green!40}{green!10}{Facilitación de mapeo y seguiridad en tiempo "real".\\
+Se puede hacer uso del procesamiento en la nube, y poder sacar el potencial que la Inteligencia Computacional nos puede brindar como el reconocimiento de actividades ilicitas (sólo por mencionar alguna).}
+
+\mybox{Desventajas}{red!40}{red!10}{Autonomía de vuelo y de zonas de inspección.\\
+A pesar del despliegue de las redes 5G, los ductos o zonas a vigilar están en zonas no urbanas y fuera de alguna zona de cobertura de red celular}
+
 %------------------------------------------------
-
-\subsection{Aplicaciones que involucrán perspectivas aereas}
-
-Lorem\\
-
-% Numbered question, with an optional title
-\begin{question}[\itshape (with optional title)]
-  In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
-\end{question}
-
-Mauris interdum porttitor fringilla. Proin tincidunt sodales leo at ornare. Donec tempus magna non mauris gravida luctus. Cras vitae arcu vitae mauris eleifend scelerisque. Nam sem sapien, vulputate nec felis eu, blandit convallis risus. Pellentesque sollicitudin venenatis tincidunt. In et ipsum libero. Nullam tempor ligula a massa convallis pellentesque.
-
+\newpage
 \subsection{Manupulación de Objetos para trabajos de altura}
 
-Lorem
+El desarrollo acelerado de la tecnología abarca prácticamente todos los campos del saber e impacta una amplia gama de actividades que se llevan a cabo hoy en día (Carpio, 2018). Actualmente existe un progreso asombroso en el aprendizaje automático y la inteligencia artificial, persistiendo la necesidad de desarrollar conjuntos socio-tecnológicos de humanos y máquinas para lograr colectivamente resultados superiores.\\
 
-% Numbered question, with an optional title
-\begin{question}[\itshape (with optional title)]
-  In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
-\end{question}
+\begin{figure}[h]
+\includegraphics[width=8cm]{pictures/arm_drone.png}
+\centering
+\end{figure}
 
-Mauris interdum porttitor fringilla. Proin tincidunt sodales leo at ornare. Donec tempus magna non mauris gravida luctus. Cras vitae arcu vitae mauris eleifend scelerisque. Nam sem sapien, vulputate nec felis eu, blandit convallis risus. Pellentesque sollicitudin venenatis tincidunt. In et ipsum libero. Nullam tempor ligula a massa convallis pellentesque.
+\mybox{Ventajas}{green!40}{green!10}{This is a very different box... Well, ok, just the colour.}
 
+\mybox{Desventajas}{red!40}{red!10}{Everything needed to decrypt the drive data is stored on the drive itself. No secret is
+  present in the enclosure.}
+
+\newpage
 \subsection{Polonización robótica}
 
-Fusce varius orci ac magna dapibus porttitor. In tempor leo a neque bibendum sollicitudin. Nulla pretium fermentum nisi, eget sodales magna facilisis eu. Praesent aliquet nulla ut bibendum lacinia. Donec vel mauris vulputate, commodo ligula ut, egestas orci. Suspendisse commodo odio sed hendrerit lobortis. Donec finibus eros erat, vel ornare enim mattis et.
+%El surgimiento reciente de vehículos aéreos no tripulados (VANTs), concretamente los drones, forman parte de esos avances que ha revolucionado en los últimos años distintos quehaceres relacionados con la comunicación, monitoreo del espacio, seguridad ciudadana, agricultura y tráfico automotor, entre otros. Destacando tecnologías avanzadas como imágenes espectrales, robótica e inteligencia artificial (IA) para derivar el sistema de agricultura tradicional a un sistema de agricultura moderno
 
-% Numbered question, with an optional title
-\begin{question}[\itshape (with optional title)]
-  In congue risus leo, in gravida enim viverra id. Donec eros mauris, bibendum vel dui at, tempor commodo augue. In vel lobortis lacus. Nam ornare ullamcorper mauris vel molestie. Maecenas vehicula ornare turpis, vitae fringilla orci consectetur vel. Nam pulvinar justo nec neque egestas tristique. Donec ac dolor at libero congue varius sed vitae lectus. Donec et tristique nulla, sit amet scelerisque orci. Maecenas a vestibulum lectus, vitae gravida nulla. Proin eget volutpat orci. Morbi eu aliquet turpis. Vivamus molestie urna quis tempor tristique. Proin hendrerit sem nec tempor sollicitudin.
-\end{question}
+Actualmente los problemas derivados del cambio climático y de otras causas más específicas, entre ellas el uso de dispositivos o trampas de insectos en cultivos han impactado directamente la población de insectos fitófagos \href{http://www.scielo.org.pe/scielo.php?pid=S2077-99172020000100061&script=sci_abstract}{(Bravo-Portocarrero et al., 2020)}, y probablemente también de algunos polinizadores. De manera que estos fenómenos, así como sus consecuencias, seguramente sea uno de los desafíos que debe asumir el hombre para mitigar sus impactos.\\
 
-Mauris interdum porttitor fringilla. Proin tincidunt sodales leo at ornare. Donec tempus magna non mauris gravida luctus. Cras vitae arcu vitae mauris eleifend scelerisque. Nam sem sapien, vulputate nec felis eu, blandit convallis risus. Pellentesque sollicitudin venenatis tincidunt. In et ipsum libero. Nullam tempor ligula a massa convallis pellentesque.
+\begin{figure}[h]
+\includegraphics[width=10cm]{pictures/polinizadores.jpg}
+\centering
+\end{figure}
+
+Ante el panorama descrito, surge una estrategia para aliviar los efectos de la disminución de la polinización natural, específicamente por biopolinizadores como la abeja; es decir, el uso de vehículos aéreos no tripulados tipo drones, de los cuales, ya existen experiencias exitosas de su aplicación en tareas relacionadas con detección de plagas estrés hídrico y análisis de humedad del suelo; pero además, agregan dichos autores, que recientemente diversas empresas diseñan plataformas exclusivas para otras actividades agrícolas específicas, entre ellas, la polinización
+
+\mybox{Ventajas}{green!40}{green!10}{Herramienta potencial en el campo de la agricultura de precisión, particularmente en actividades asociadas a polinización y fertilización. Existe abundante información sobre la aplicación de VANTs en la agricultura, pero en específico para labores de polinización, no es lo mismo.}
+
+\mybox{Desventajas}{red!40}{red!10}{Aunque resulta prematuro hablar de las consecuencias medioambientales de la tecnología en análisis, no deja de preocupar el uso de los VANTs en determinados agroecosistemas, básicamente en aquellos en los que muchas especies de animales desarrollan sus ciclos vitales.\\
+  El impacto que los VANTs causarían en la población de polinizadores naturales en los cultivos, los cuales, al observar que estos equipos se acercan hasta ellos pueden generar estrés y otras situaciones que potencialmente afecten su salud.\\
+Finalmente, el desarrollo de nuevas investigaciones en torno al uso de drones en actividades de polinización es un reto pendiente, pues de cara al futuro se requiere de mayores conocimientos que conlleven a nuevas readaptaciones de la tecnología VANTs, de forma tal, que sean superadas en el corto tiempo las desventajas y adversidades que hasta ahora implica su uso en la agricultura de precisión
+}
 
 \end{document}

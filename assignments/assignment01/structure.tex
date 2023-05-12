@@ -58,7 +58,10 @@
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 
 \usepackage{XCharter} % Use the XCharter fonts
-
+\usepackage{hyperref}
+\usepackage{geometry} 
+\usepackage{tikz} 
+\usepackage{lipsum}
 %----------------------------------------------------------------------------------------
 %	COMMAND LINE ENVIRONMENT
 %----------------------------------------------------------------------------------------
@@ -141,6 +144,16 @@
 % \begin{question}[optional title]
 %	Question contents
 % \end{question}
+
+\newcommand{\mybox}[4]{
+    \begin{figure}[h]
+        \centering
+    \begin{tikzpicture}
+        \node[anchor=text,text width=\columnwidth-1.2cm, draw, rounded corners, line width=1pt, fill=#3, inner sep=5mm] (big) {\\#4};
+        \node[draw, rounded corners, line width=.5pt, fill=#2, anchor=west, xshift=5mm] (small) at (big.north west) {#1};
+    \end{tikzpicture}
+    \end{figure}
+}
 
 \mdfdefinestyle{question}{
 	innertopmargin=1.2\baselineskip,
