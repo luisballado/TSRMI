@@ -17,3 +17,18 @@ https://www.semanticscholar.org/paper/The-power-tethered-UAV-UGV-team%3A-A-colla
 PAPERS
 https://rpg.ifi.uzh.ch/docs/IROS17_Cieslewski.pdf
 https://www.ijlrec.com/index_files/Download/Vol%201,%20Issue%201/3-K.%20S.%20SENTHILKUMAR.pdf
+
+Framed-Quadtree Path Planning for Mobile Robots Operating in
+Sparse Environments
+https://www.cs.cmu.edu/~motionplanning/papers/sbp_papers/s/stentz_quadtree.pdf
+
+Motion Planning for Mobile Robot Navigation using Combine Quad-Tree
+Decomposition and Voronoi Diagrams
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5451994
+
+Path Planning Navigation
+https://web.ics.purdue.edu/~rvoyles/Classes/ROSprogramming/Lectures/PathPlanning.pdf
+
+Robot Navigation with PolyMap, a Polygon-Based Map Format
+https://www.researchgate.net/publication/335382373_Robot_Navigation_with_PolyMap_a_Polygon-Based_Map_Format
+
