@@ -23,3 +23,10 @@ https://biorobotics.fi-p.unam.mx/wp-content/uploads/Publications/Papers/2023/Pum
 
 Stanley: DARPA
 http://robots.stanford.edu/papers/thrun.stanley05.pdf
+
+Path Planning Navigation
+https://web.ics.purdue.edu/~rvoyles/Classes/ROSprogramming/Lectures/PathPlanning.pdf
+
+Framed-Quadtree Path Planning for Mobile Robots Operating in
+Sparse Environments
+https://www.cs.cmu.edu/~motionplanning/papers/sbp_papers/s/stentz_quadtree.pdf
