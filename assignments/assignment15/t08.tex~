@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lachaise Assignment
+% LaTeX Template
+% Version 1.0 (26/6/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Marion Lachaise & François Févotte
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\input{structure.tex} % Include the file specifying the document structure and custom commands
+
+%----------------------------------------------------------------------------------------
+%	ASSIGNMENT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\title{TSRMI: Assignment \#8} % Title of the assignment
+
+\author{Luis Alberto Ballado Aradias\\ \texttt{luis.ballado@cinvestav.mx}} % Author name and email address
+
+\date{CINVESTAV UNIDAD TAMAULIPAS --- \today} % University, school and/or department name(s) and a date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\section*{TAREA}
+Documentar dos desarrollos cientificos recientes que realicen la construcción de un RRT para resolver algún problema de planificación, uno para robots manipuladores y otro para robots móviles.
+
+\section{¿Cuáles son las consideraciones particulares para cada una de estas implementaciones?} 
+
+%\begin{figure}[h]
+%\includegraphics[width=10cm]{images/vant.jpg}
+%\centering
+%\end{figure}
+
+%------------------------------------------------
+\newpage
+\section{¿Qué caracteristicas comparten?}
+
+
+%\begin{figure}[h]
+%\includegraphics[width=10cm]{images/drone_alafija.jpg}
+%\centering
+%\end{figure}
+
+%------------------------------------------------
+
+\section{¿Qué técnicas emplean para acelerar el proceso de búsqueda de soluciones?}
+
+\section{¿Qué algoritmo utilizan para refinar la solución?}
+
+\end{document}
