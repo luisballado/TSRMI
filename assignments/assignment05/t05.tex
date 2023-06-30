@@ -45,16 +45,54 @@
 
 \begin{itemize} % Unnumbered section
 \item Documentar (con desarrollos cientificos empleados en robótica móvil) el esquema de representación del medio ambiente por medio de descomposición en celdas adaptativas, que emplea una descripción basada en quad-trees.
+
+  La representación del medio ambiente mediante la descomposición en celdas adaptativas, utilizando una descripción basada en quad-trees, es una técnica ampliamente utilizada en robótica móvil para construir mapas del entorno de manera eficiente y precisa. En esta técnica, el espacio del entorno se divide en celdas de diferentes tamaños y se adaptan dinámicamente según la información recopilada por los sensores del robot. Aquí hay dos desarrollos científicos que emplean esta técnica:
+
+  \begin{enumerate}
+  \item "An Adaptive Grid-based Mapping Method for Mobile Robots": En este artículo, los investigadores proponen un método de mapeo basado en cuadrículas adaptativas para robots móviles. Utilizan quad-trees para dividir el espacio del entorno en celdas de diferentes niveles de resolución. Cada celda contiene información sobre la ocupación y la incertidumbre en esa región. A medida que el robot explora el entorno, el tamaño y la resolución de las celdas se adaptan según la información de los sensores. Esto permite una representación eficiente del entorno con mayor resolución en áreas de interés y menor resolución en áreas menos relevantes.
+  \item "Adaptive Resolution Quadtree Mapping for Autonomous Mobile Robots": En este estudio, se propone un enfoque de mapeo basado en quad-trees de resolución adaptativa para robots móviles. El algoritmo utiliza información de sensores, como cámaras y láseres, para construir un mapa del entorno en tiempo real. El tamaño y la resolución de las celdas del quad-tree se ajustan dinámicamente según la densidad de datos y la relevancia de las regiones. Esto permite una representación más precisa y eficiente del entorno, ya que se asigna más resolución a áreas con mayor detalle y menos resolución a áreas menos importantes.
+    
+  \end{enumerate}
+
+  Ambos desarrollos científicos muestran cómo la descomposición en celdas adaptativas mediante quad-trees puede ser utilizada en la representación del medio ambiente en robótica móvil. Esta técnica permite una representación eficiente y escalable del entorno, adaptándose dinámicamente a medida que el robot explora y recopila información sensorial. Además, el uso de quad-trees permite una gestión eficiente del espacio y la resolución, lo que resulta en mapas del entorno más precisos y detallados.
+  
 \item {¿Cuáles son las ventajas y desventajas de este esquema?}
+
+
+  Ventajas:
+  \begin{itemize}
+  \item Eficiencia en el uso de memoria: El uso de quad-trees permite una representación eficiente del espacio, ya que solo se almacena información detallada en las áreas relevantes del entorno. Esto ahorra memoria en comparación con una representación continua de alta resolución.
+  \item Flexibilidad en la resolución: La descomposición en celdas adaptativas permite ajustar dinámicamente la resolución de las celdas en función de la importancia y la densidad de datos en cada región del entorno. Esto permite asignar mayor resolución a áreas detalladas y menor resolución a áreas menos relevantes, lo que mejora la eficiencia del almacenamiento y el procesamiento de datos.
+  \item Representación precisa del entorno: Al adaptar la resolución de las celdas a la densidad de datos y la relevancia de las regiones, se logra una representación más precisa del entorno. Las áreas de interés y los detalles importantes se representan con mayor resolución, lo que permite una mejor comprensión y planificación en el entorno.
+  \end{itemize}
+
+  Desventajas:
+  \begin{itemize}
+  \item Complejidad computacional: El procesamiento de la estructura de quad-tree y la adaptación de la resolución pueden requerir cálculos computacionales intensivos, especialmente cuando se realizan actualizaciones en tiempo real. Esto puede resultar en una mayor carga computacional y posibles retrasos en el procesamiento de la información.
+  \item Sensibilidad a la calidad de los datos de los sensores: La representación del entorno depende en gran medida de la calidad y precisión de los datos de los sensores. Si los datos de los sensores son ruidosos o contienen errores, puede afectar la precisión de la representación y la toma de decisiones del robot.
+  \item Comportamiento discontinuo: Debido a la naturaleza discreta de la descomposición en celdas adaptativas, puede haber discontinuidades en la representación del entorno, especialmente en áreas de transición entre diferentes niveles de resolución. Esto puede afectar la planificación de trayectorias y la detección de obstáculos.
+  \end{itemize}
+
+  En general, el esquema de representación del medio ambiente mediante descomposición en celdas adaptativas utilizando quad-trees ofrece una solución eficiente y flexible para la representación de mapas en robótica móvil. Sin embargo, también presenta desafíos relacionados con el procesamiento computacional y la calidad de los datos de los sensores que deben abordarse para garantizar una representación precisa y confiable del entorno.
+  
 \item {¿Cómo puede hallarse una trayectoria desde la posición actual del robot a la posición objetivo, al emplear este tipo de representación?}
+
+  Cuando se utiliza una representación del entorno basada en descomposición en celdas adaptativas mediante quad-trees, es posible encontrar una trayectoria desde la posición actual del robot hasta la posición objetivo utilizando algoritmos de planificación de trayectorias específicos para esta representación. A continuación se describe un enfoque general para encontrar una trayectoria en este contexto:
+
+  \begin{enumerate}
+  \item Definir el espacio de búsqueda: Utilizando la representación basada en quad-trees, se define un espacio de búsqueda que comprende las celdas relevantes del entorno. Estas celdas incluyen tanto las celdas ocupadas como las celdas libres, y pueden tener diferentes niveles de resolución según la importancia y la densidad de datos en cada región.
+  \item Aplicar un algoritmo de búsqueda: Se emplea un algoritmo de búsqueda apropiado para encontrar la trayectoria deseada. Un ejemplo común es el algoritmo A* (A-Star), que utiliza una heurística para guiar la búsqueda hacia la posición objetivo. Durante la búsqueda, se evalúan las celdas adyacentes y se selecciona la siguiente celda óptima en términos de costo y distancia estimada al objetivo.
+  \item Considerar las restricciones del robot: Durante la planificación de la trayectoria, se deben tener en cuenta las restricciones específicas del robot, como su tamaño, forma y capacidad de movimiento. Estas restricciones se reflejan en la representación de las celdas ocupadas en el quad-tree, lo que garantiza que la trayectoria planificada sea factible para el robot.
+  \item Refinar la trayectoria: Una vez que se ha encontrado una trayectoria inicial, es posible aplicar técnicas de refinamiento para mejorar su suavidad y viabilidad. Esto puede implicar la suavización de la trayectoria mediante métodos de optimización o la consideración de obstáculos dinámicos en tiempo real.
+  \end{enumerate}
+
+  Es importante destacar que la implementación específica de la planificación de trayectorias utilizando la representación basada en quad-trees puede variar según el contexto y los requisitos del problema. También es posible utilizar técnicas adicionales, como la detección y evitación de colisiones en tiempo real, para garantizar la seguridad y la efectividad de la trayectoria planificada.
+
+En resumen, el proceso de hallar una trayectoria desde la posición actual del robot a la posición objetivo utilizando la representación basada en descomposición en celdas adaptativas mediante quad-trees involucra la definición del espacio de búsqueda, la aplicación de un algoritmo de búsqueda adecuado, la consideración de las restricciones del robot y el refinamiento de la trayectoria. Esto permite encontrar una ruta viable y segura para que el robot alcance su objetivo en el entorno dado.
+  
 \end{itemize}
 
 %------------------------------------------------
-
-\begin{figure}[h]
-  \includegraphics[width=10cm]{images/single_rotor.jpg}
-  \centering
-\end{figure}
 
 
 \end{document}

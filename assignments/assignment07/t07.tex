@@ -47,14 +47,44 @@ Para evitar calcular la forma exacta de la fontera entre el espacio libre y el e
 \begin{itemize} % Unnumbered section
 \item {Documentar algunos desarrollos cientificos que empleen una representación discreta del espacio de configuraciones}
 
-\begin{figure}[h]
-\includegraphics[width=10cm]{images/drone_alafija.jpg}
-\centering
-\end{figure}
+  Uno de los desarrollos científicos que emplea una representación discreta del espacio de configuraciones es el algoritmo de Muestreo de Configuraciones Aleatorias (Rapidly Exploring Random Tree, RRT).\\
 
+  El algoritmo RRT es ampliamente utilizado en robótica móvil para la planificación de trayectorias en entornos complejos. En lugar de trabajar con una representación continua del espacio de configuraciones, el algoritmo RRT utiliza una representación discreta basada en muestras aleatorias.\\
+
+  El RRT construye un árbol de configuraciones explorando secuencialmente el espacio de configuraciones mediante muestras aleatorias. Cada muestra aleatoria se conecta a la configuración más cercana en el árbol, creando una estructura ramificada que representa posibles trayectorias. El algoritmo utiliza una métrica de distancia para encontrar la configuración más cercana y generar muestras aleatorias en función de esta métrica.\\
+
+  Un desarrollo científico relevante que emplea el algoritmo RRT y una representación discreta del espacio de configuraciones es el trabajo titulado "RRT-Connect: An Efficient Approach to Path Planning in Environments with Narrow Passages and High Obstacle Density" (Kuffner Jr., J.J., LaValle, S.M., 2000). En este trabajo, se propone una extensión del algoritmo RRT llamada RRT-Connect, que mejora la eficiencia y la capacidad de encontrar soluciones en entornos con pasajes estrechos y alta densidad de obstáculos.\\
+
+  Otro desarrollo científico que utiliza una representación discreta del espacio de configuraciones es el algoritmo de Vistas y Rutas Visibles (Visibility-Based Sampling Roadmap, VSR). Este algoritmo, presentado en el artículo "Visibility-based Sampling Roadmap for Path Planning in 3D Environments" (Kim, J., Choi, W., 2012), utiliza una discretización del espacio de configuraciones en forma de celdas para construir una estructura de datos llamada Roadmap. Cada celda contiene información sobre la visibilidad entre las diferentes configuraciones, lo que permite encontrar rutas visibles y evitar colisiones con los obstáculos.\\
+
+  Estos desarrollos científicos demuestran cómo la representación discreta del espacio de configuraciones, utilizando algoritmos como RRT y VSR, puede facilitar la planificación de trayectorias en entornos complejos. Al discretizar el espacio de configuraciones, se evita la necesidad de calcular la forma exacta de la frontera entre el espacio libre y el espacio ocupado, lo que simplifica el proceso de planificación y permite una exploración más eficiente del espacio de búsqueda.
+  
 \item {¿Cuáles son las diferencias, ventajas y desventajas entre la representación continua del C-Space y su correspondiente representación discreta?}
+
+  La representación continua del C-Space y su correspondiente representación discreta tienen diferencias, ventajas y desventajas distintas. Aquí se presentan algunas de ellas:
+  \begin{itemize}
+  \item Representación Continua del C-Space
+    \begin{itemize}
+    \item Diferencias: La representación continua del C-Space utiliza una descripción continua y precisa de las configuraciones posibles en el espacio. Permite una representación detallada y exacta de las regiones de obstáculos y las posiciones accesibles.
+    \item Ventajas:
+      \begin{itemize}
+      \item Precisión:
+      \item Resolución
+        \item Interpolación continua:
+      \end{itemize}
+    \item Desventajas:
+      
+      \begin{itemize}
+      \item Complejidad computacional:
+      \item Requisitos de memoria:
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+  
 \item {¿Cuáles son las diferencias entre esta representación y la representación de rejilla de ocupación (celdas fijas)?}
 
+  
+  
 \end{itemize}
 
 \end{document}

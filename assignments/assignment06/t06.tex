@@ -46,22 +46,53 @@ El uso de mapas topológicos no es muy común en robótica móvil.\\
 
 \begin{itemize} % Unnumbered section
 \item Documentar algunos desarrollos cientificos que empleen una representación topológica del medio ambiente.
+
+  \begin{enumerate}
+  \item Topological SLAM for Large-Scale Outdoor Environments: En este desarrollo, se propone un enfoque para la construcción de mapas topológicos de grandes entornos al aire libre utilizando técnicas de SLAM (Simultaneous Localization and Mapping). El objetivo es capturar la estructura topológica del entorno, como caminos, intersecciones y puntos de referencia, en lugar de enfocarse en la representación geométrica detallada. Se utilizan sensores como cámaras y sistemas de posicionamiento para estimar la posición del robot y construir el mapa topológico.
+  \item Topology-Based Mapping and Navigation for Autonomous Robots: En este desarrollo, se presenta un enfoque para el mapeo y la navegación autónoma de robots utilizando representaciones topológicas del entorno. El objetivo es construir un mapa que capture las conexiones y relaciones topológicas entre las diferentes áreas del entorno, en lugar de representar la geometría detallada. Se utilizan técnicas de grafos y algoritmos de planificación de trayectorias basados en topología para permitir una navegación eficiente y robusta en entornos complejos.
+    
+  \end{enumerate}
+
+  En ambos desarrollos, la representación topológica del medio ambiente se utiliza para capturar la estructura general y las relaciones entre las diferentes áreas del entorno. Esto permite una representación más compacta y abstracta del entorno, lo que puede facilitar la planificación de trayectorias y la toma de decisiones del robot. Las ventajas de esta representación incluyen una menor carga computacional, una mayor capacidad de generalización a diferentes entornos y una mejor capacidad de relocalización en caso de cambios en el entorno. Sin embargo, también puede haber desafíos en la construcción y actualización del mapa topológico, así como en la precisión de la navegación en comparación con representaciones geométricas más detalladas.
+    
 \item {¿Cuáles son las consideraciones particulares para cada una de estas implementaciones?} % Numbered section
 
-\begin{figure}[h]
-\includegraphics[width=10cm]{images/vant.jpg}
-\centering
-\end{figure}
+  \begin{enumerate}
+  \item Topological SLAM for Large-Scale Outdoor Environments:
+    \begin{itemize}
+    \item Escala del entorno: La implementación de este enfoque requiere lidiar con grandes entornos al aire libre, lo que puede implicar desafíos adicionales en términos de procesamiento de datos y almacenamiento del mapa topológico.
+    \item Detección de puntos de referencia: Es fundamental identificar puntos de referencia significativos en el entorno para construir una estructura topológica confiable. Esto puede requerir técnicas de detección y reconocimiento de características específicas del entorno, como características geográficas, señales de tráfico u otros elementos distintivos.
+    \item Integración de sensores: Para estimar la posición del robot y construir el mapa topológico, se utilizan diferentes sensores, como cámaras y sistemas de posicionamiento. La integración adecuada de estos sensores y la fusión de la información son aspectos clave a considerar en la implementación.
+    \end{itemize}
+  \item Topology-Based Mapping and Navigation for Autonomous Robots:
 
-%------------------------------------------------
+    \begin{itemize}
+    \item Representación del grafo topológico: La construcción y actualización del grafo topológico requiere definir los nodos y las conexiones entre ellos de manera adecuada. Esto implica tomar decisiones sobre la granularidad del grafo, cómo identificar y nombrar los nodos, y cómo establecer las relaciones topológicas entre ellos.
+    \item Planificación de trayectorias: La navegación basada en el mapa topológico implica la planificación de trayectorias que sigan las conexiones y los nodos del grafo. Se deben considerar algoritmos de planificación de trayectorias específicos para grafos topológicos, que optimicen la eficiencia y la robustez de la navegación.
+      \item Actualización dinámica del mapa: En entornos en los que el entorno puede cambiar con el tiempo, como la presencia de obstáculos móviles, es importante tener en cuenta la capacidad de actualizar y adaptar dinámicamente el mapa topológico para reflejar los cambios en el entorno.
+    \end{itemize}
+
+    Estas consideraciones particulares reflejan los desafíos y aspectos importantes a tener en cuenta al implementar estos enfoques de representación topológica del medio ambiente en la robótica móvil. Cada implementación puede requerir decisiones y adaptaciones específicas según las características del entorno y los requisitos del sistema.
+    
+  \end{enumerate}
+  
 \item {¿Emplean algún otro tipo de representación con información adicional?}
 
-\begin{figure}[h]
-\includegraphics[width=10cm]{images/drone_alafija.jpg}
-\centering
-\end{figure}
+  En los desarrollos científicos mencionados, se utilizan representaciones topológicas del medio ambiente, que se centran en capturar la estructura y las relaciones entre las áreas del entorno. Sin embargo, es posible complementar estas representaciones con información adicional para mejorar la navegación y la toma de decisiones de los robots móviles. Algunas de las técnicas que se emplean son las siguientes:
 
-\end{itemize}
+  \begin{itemize}
+\item Representaciones geométricas: Aunque los enfoques mencionados se basan principalmente en representaciones topológicas, es común combinarlas con información geométrica para obtener una representación más completa. Esto implica la inclusión de datos sobre la geometría de los objetos y obstáculos en el entorno, como coordenadas, dimensiones y formas. La información geométrica puede ayudar a realizar cálculos más precisos de trayectorias y evitar colisiones.
+\item Mapas de ocupación: Los mapas de ocupación son representaciones que indican qué áreas del entorno están ocupadas y cuáles están libres. Estos mapas pueden complementar las representaciones topológicas al proporcionar información detallada sobre la distribución espacial de los obstáculos. Se utilizan técnicas como sensores de detección de obstáculos (cámaras, lidar, sonar) para obtener datos de ocupación y construir mapas actualizados en tiempo real.
+  \item Mapas de elevación: En entornos con terrenos irregulares, los mapas de elevación son útiles para capturar la información vertical. Estos mapas describen las alturas o perfiles de elevación en diferentes puntos del entorno. La información sobre la elevación del terreno puede ser crucial para la planificación de trayectorias y la toma de decisiones, especialmente en aplicaciones al aire libre o en terrenos complejos.
+
+  \end{itemize}
+
+  Estas representaciones adicionales, como la información geométrica, los mapas de ocupación y los mapas de elevación, se emplean junto con las representaciones topológicas para enriquecer la descripción del entorno y proporcionar datos más detallados para la navegación y planificación de trayectorias de los robots móviles. La combinación de estas representaciones puede mejorar la precisión, la seguridad y la eficiencia de los sistemas de robótica móvil.
+
+  
+  \end{itemize}
+
+
 
 %------------------------------------------------
 
