@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  12 JUN 2023 16:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  29 JUN 2023 12:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -919,25 +919,26 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 46.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 46.
- [1
-
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/vant.jpg, id=12, 180.675pt x 73.7154pt>
+<images/vant.jpg, id=4, 180.675pt x 73.7154pt>
 File: images/vant.jpg Graphic file (type jpg)
 <use images/vant.jpg>
-Package pdftex.def Info: images/vant.jpg  used on input line 58.
+Package pdftex.def Info: images/vant.jpg  used on input line 54.
 (pdftex.def)             Requested size: 284.52756pt x 116.09895pt.
- [2 <./images/vant.jpg>]
-<images/drone_alafija.jpg, id=16, 1850.112pt x 1233.408pt>
+ [1
+
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
+s/vant.jpg>]
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 60.
+LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 60.
+<images/drone_alafija.jpg, id=12, 1850.112pt x 1233.408pt>
 File: images/drone_alafija.jpg Graphic file (type jpg)
 <use images/drone_alafija.jpg>
-Package pdftex.def Info: images/drone_alafija.jpg  used on input line 67.
+Package pdftex.def Info: images/drone_alafija.jpg  used on input line 63.
 (pdftex.def)             Requested size: 284.52756pt x 189.67064pt.
- [3 <./images/drone_alafija.jpg>] (./t04.aux
+
+[2 <./images/drone_alafija.jpg>] (./t04.aux
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 ) ) 
@@ -955,10 +956,10 @@ usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb
 ></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman
 .pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1200.p
 fb>
-Output written on t04.pdf (3 pages, 3517056 bytes).
+Output written on t04.pdf (2 pages, 3515637 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 20 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

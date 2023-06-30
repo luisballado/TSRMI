@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  12 JUN 2023 15:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  29 JUN 2023 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -919,46 +919,44 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 46.
-LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 46.
- [1
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/vant.jpg, id=12, 180.675pt x 73.7154pt>
+ []
+
+<images/vant.jpg, id=4, 180.675pt x 73.7154pt>
 File: images/vant.jpg Graphic file (type jpg)
 <use images/vant.jpg>
-Package pdftex.def Info: images/vant.jpg  used on input line 55.
+Package pdftex.def Info: images/vant.jpg  used on input line 52.
 (pdftex.def)             Requested size: 284.52756pt x 116.09895pt.
- [2 <./images/vant.jpg>]
-<images/drone_alafija.jpg, id=16, 1850.112pt x 1233.408pt>
+<images/drone_alafija.jpg, id=5, 1850.112pt x 1233.408pt>
 File: images/drone_alafija.jpg Graphic file (type jpg)
 <use images/drone_alafija.jpg>
-Package pdftex.def Info: images/drone_alafija.jpg  used on input line 64.
+Package pdftex.def Info: images/drone_alafija.jpg  used on input line 60.
 (pdftex.def)             Requested size: 284.52756pt x 189.67064pt.
- [3 <./images/drone_alafija.jpg>] (./t06.aux
+[1
+
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
+s/vant.jpg> <./images/drone_alafija.jpg>] (./t06.aux
 LaTeX Info: Redefining \. on input line 10.
 LaTeX Info: Redefining \% on input line 10.
 ) ) 
 Here is how much of TeX's memory you used:
- 20852 strings out of 478268
- 396475 string characters out of 5846348
- 687056 words of memory out of 5000000
- 38654 multiletter control sequences out of 15000+600000
- 508081 words of font info for 60 fonts, out of 8000000 for 9000
+ 20849 strings out of 478268
+ 396386 string characters out of 5846348
+ 689056 words of memory out of 5000000
+ 38653 multiletter control sequences out of 15000+600000
+ 495443 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,6n,114p,540b,363s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
-usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb
-></usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman
-.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1200.p
-fb>
-Output written on t06.pdf (3 pages, 3516152 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
+}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/xcharter/xch_rydp4l.enc}</
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.pf
+b></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+
+Output written on t06.pdf (1 page, 3458536 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 25 PDF objects out of 1000 (max. 8388607)
+ 15 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
