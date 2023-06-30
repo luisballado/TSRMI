@@ -49,11 +49,11 @@
   Existen varias formas para implementar un poligono en la memoria de una computadora.\\
 
   \begin{enumerate}
-  \item Lista de coordenadas: En esta implementación, se utiliza una lista de coordenadas para representar los vértices del polígono. Cada vértice se define por sus coordenadas x e y. La secuencia de vértices en la lista determina el orden en el que se conectan para formar los lados del polígono.
-  \item Lista de puntos: Similar a la implementación anterior, se utiliza una lista de puntos para representar los vértices del polígono. Cada punto contiene una estructura de datos con campos para las coordenadas x e y. La lista de puntos se organiza en el orden deseado para definir los lados del polígono.
-  \item Arreglo de coordenadas: En esta implementación, se utiliza un arreglo unidimensional para almacenar las coordenadas x e y de los vértices del polígono. Cada par de coordenadas consecutivas forma un vértice. La longitud del arreglo determina el número de vértices del polígono.
-  \item Estructura de datos poligono: Se puede definir una estructura de datos personalizada para representar un polígono. Esta estructura de datos puede contener información adicional, como el número de vértices, el tipo de polígono (regular, irregular, convexo, cóncavo, etc.), propiedades geométricas adicionales, etc.
-  \item Representación matemática: En lugar de almacenar explícitamente los vértices del polígono, se puede utilizar una representación matemática, como una ecuación paramétrica o una ecuación de curva, para definir la forma del polígono. Esta representación se puede utilizar para realizar cálculos y operaciones geométricas, como intersecciones, rotaciones, transformaciones, etc. 
+  \item \textbf{Lista de coordenadas:} En esta implementación, se utiliza una lista de coordenadas para representar los vértices del polígono. Cada vértice se define por sus coordenadas x e y. La secuencia de vértices en la lista determina el orden en el que se conectan para formar los lados del polígono.
+  \item \textbf{Lista de puntos:} Similar a la implementación anterior, se utiliza una lista de puntos para representar los vértices del polígono. Cada punto contiene una estructura de datos con campos para las coordenadas x e y. La lista de puntos se organiza en el orden deseado para definir los lados del polígono.
+  \item \textbf{Arreglo de coordenadas:} En esta implementación, se utiliza un arreglo unidimensional para almacenar las coordenadas x e y de los vértices del polígono. Cada par de coordenadas consecutivas forma un vértice. La longitud del arreglo determina el número de vértices del polígono.
+  \item \textbf{Estructura de datos poligono:} Se puede definir una estructura de datos personalizada para representar un polígono. Esta estructura de datos puede contener información adicional, como el número de vértices, el tipo de polígono (regular, irregular, convexo, cóncavo, etc.), propiedades geométricas adicionales, etc.
+  \item \textbf{Representación matemática:} En lugar de almacenar explícitamente los vértices del polígono, se puede utilizar una representación matemática, como una ecuación paramétrica o una ecuación de curva, para definir la forma del polígono. Esta representación se puede utilizar para realizar cálculos y operaciones geométricas, como intersecciones, rotaciones, transformaciones, etc. 
   \end{enumerate}
 
   La elección de la forma de implementación dependerá de las necesidades y características específicas del sistema o aplicación en la que se esté trabajando. Cada enfoque tiene sus ventajas y desventajas en términos de eficiencia de almacenamiento, facilidad de manipulación, capacidad de realizar operaciones geométricas, entre otros factores. Es importante considerar también el lenguaje de programación utilizado y las bibliotecas disponibles para el manejo de geometría y gráficos.
@@ -63,15 +63,15 @@
   La representación de una línea infinita en la memoria de una computadora es un problema interesante debido a su naturaleza continua y no acotada. A continuación, se presentan algunas técnicas comunes utilizadas para implementar una línea infinita en la memoria de una computadora:
 
   \begin{enumerate}
-  \item Ecuación de la línea: Una forma común de representar una línea infinita es mediante su ecuación matemática. La ecuación de la línea generalmente se expresa en la forma y = mx + b, donde m es la pendiente de la línea y b es el término de desplazamiento. Esta representación permite almacenar los coeficientes m y b en variables en la memoria de la computadora.
+  \item \textbf{Ecuación de la línea:} Una forma común de representar una línea infinita es mediante su ecuación matemática. La ecuación de la línea generalmente se expresa en la forma y = mx + b, donde m es la pendiente de la línea y b es el término de desplazamiento. Esta representación permite almacenar los coeficientes m y b en variables en la memoria de la computadora.
     
-  \item Coordenadas extremas: Otra forma de representar una línea infinita es mediante el almacenamiento de las coordenadas de dos puntos extremos en la línea. Estos puntos definen la dirección y la pendiente de la línea. Sin embargo, es importante tener en cuenta que esta representación solo es adecuada cuando se necesita almacenar segmentos finitos de la línea, en lugar de la línea completa.
+  \item \textbf{Coordenadas extremas:} Otra forma de representar una línea infinita es mediante el almacenamiento de las coordenadas de dos puntos extremos en la línea. Estos puntos definen la dirección y la pendiente de la línea. Sin embargo, es importante tener en cuenta que esta representación solo es adecuada cuando se necesita almacenar segmentos finitos de la línea, en lugar de la línea completa.
 
-  \item Vector de dirección: En esta implementación, se utiliza un vector para representar la dirección y pendiente de la línea. El vector contiene componentes para la magnitud y la dirección, y se puede almacenar en la memoria de la computadora.
+  \item \textbf{Vector de dirección:} En esta implementación, se utiliza un vector para representar la dirección y pendiente de la línea. El vector contiene componentes para la magnitud y la dirección, y se puede almacenar en la memoria de la computadora.
 
-  \item Ecuación paramétrica: En lugar de utilizar una ecuación explícita, se puede utilizar una ecuación paramétrica para representar una línea infinita. Esta representación utiliza parámetros para generar puntos en la línea y puede ser útil para realizar cálculos y operaciones geométricas.
+  \item \textbf{Ecuación paramétrica:} En lugar de utilizar una ecuación explícita, se puede utilizar una ecuación paramétrica para representar una línea infinita. Esta representación utiliza parámetros para generar puntos en la línea y puede ser útil para realizar cálculos y operaciones geométricas.
 
-  \item Puntos de muestreo: En algunos casos, se puede implementar una línea infinita mediante la generación de un conjunto discreto de puntos de muestreo a lo largo de la línea. Estos puntos se almacenan en una estructura de datos, como una lista o un arreglo, y se utilizan para aproximar la línea continua.
+  \item \textbf{Puntos de muestreo:} En algunos casos, se puede implementar una línea infinita mediante la generación de un conjunto discreto de puntos de muestreo a lo largo de la línea. Estos puntos se almacenan en una estructura de datos, como una lista o un arreglo, y se utilizan para aproximar la línea continua.
     
   \end{enumerate}
   
@@ -79,8 +79,8 @@
 \item{Encontrar desarrollos científicos en robótica móvil que empleen este tipo de representaciones para sus mapas del medio ambiente}
 
   \begin{enumerate}
-  \item SLAM basado en líneas infinitas: En el artículo "Infinitam: An efficient method for SLAM using lines," los investigadores desarrollaron un método eficiente para la construcción de mapas del entorno utilizando líneas infinitas. En lugar de representar el entorno con mallas o puntos discretos, utilizaron líneas infinitas para capturar la estructura y la geometría del entorno de manera más precisa. Esto permitió una representación más compacta y una mejor estimación del movimiento del robot. El algoritmo utilizado combinaba información visual y geométrica para construir y actualizar el mapa del entorno.
-  \item Navegación basada en lineas infinitas: En el artículo "Line-Based Path Planning for Mobile Robots," los investigadores propusieron un enfoque de planificación de trayectorias para robots móviles basado en líneas infinitas. Utilizaron líneas infinitas como características del entorno para generar rutas seguras y eficientes para el robot. El mapa del entorno se construyó utilizando líneas detectadas por sensores, como cámaras o láseres. Luego, se aplicaron técnicas de búsqueda y optimización para encontrar la trayectoria óptima basada en la información de las líneas infinitas.
+  \item \textbf{SLAM basado en líneas infinitas}: En el artículo \textbf{Infinitam: An efficient method for SLAM using lines}, los investigadores desarrollaron un método eficiente para la construcción de mapas del entorno utilizando líneas infinitas. En lugar de representar el entorno con mallas o puntos discretos, utilizaron líneas infinitas para capturar la estructura y la geometría del entorno de manera más precisa. Esto permitió una representación más compacta y una mejor estimación del movimiento del robot. El algoritmo utilizado combinaba información visual y geométrica para construir y actualizar el mapa del entorno.
+  \item \textbf{Navegación basada en lineas infinitas}: En el artículo \textbf{Line-Based Path Planning for Mobile Robots}, los investigadores propusieron un enfoque de planificación de trayectorias para robots móviles basado en líneas infinitas. Utilizaron líneas infinitas como características del entorno para generar rutas seguras y eficientes para el robot. El mapa del entorno se construyó utilizando líneas detectadas por sensores, como cámaras o láseres. Luego, se aplicaron técnicas de búsqueda y optimización para encontrar la trayectoria óptima basada en la información de las líneas infinitas.
   \end{enumerate}
 
   Estos desarrollos demuestran cómo las representaciones de líneas infinitas pueden ser utilizadas de manera efectiva en la robótica móvil para construir mapas del medio ambiente y realizar tareas como la localización, la navegación y la planificación de trayectorias. Al utilizar líneas infinitas en lugar de representaciones discretas, se puede capturar mejor la estructura y la geometría del entorno, lo que permite una mayor precisión y eficiencia en las operaciones del robot.
@@ -89,9 +89,9 @@
 
     
     \begin{itemize}
-    \item Circulos: Los círculos son primitivas geométricas utilizadas para representar objetos redondos o áreas circulares en el entorno. Se utilizan comúnmente para representar obstáculos circulares, áreas de cobertura o regiones de interés. 
-    \item Elipses: Las elipses son primitivas similares a los círculos, pero tienen una forma ovalada. Se utilizan para representar objetos o áreas con formas elípticas en el entorno.
-    \item Rectángulos: Los rectángulos son polígonos con cuatro ángulos rectos. Se utilizan para representar objetos rectangulares, como mesas, cajas o puertas, así como áreas o regiones rectangulares en el entorno. 
+    \item \textbf{Circulos:} Los círculos son primitivas geométricas utilizadas para representar objetos redondos o áreas circulares en el entorno. Se utilizan comúnmente para representar obstáculos circulares, áreas de cobertura o regiones de interés. 
+    \item \textbf{Elipses:} Las elipses son primitivas similares a los círculos, pero tienen una forma ovalada. Se utilizan para representar objetos o áreas con formas elípticas en el entorno.
+    \item \textbf{Rectángulos:} Los rectángulos son polígonos con cuatro ángulos rectos. Se utilizan para representar objetos rectangulares, como mesas, cajas o puertas, así como áreas o regiones rectangulares en el entorno. 
     \end{itemize}
 \end{itemize}
 
