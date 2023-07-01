@@ -47,8 +47,71 @@
 \item Documentar el pseudocódigo de los algoritmos Bug1 y Bug2.
 
   
-  
+  %% This declares a command \Comment
+  %% The argument will be surrounded by /* ... */
+  \SetKwComment{Comment}{/* }{ */}
+  \RestyleAlgo{ruled}
+  \begin{algorithm}
+    \caption{Algoritmo Bug1}\label{alg:one}
+    Definir punto objetivo $P$\;
+    Inicializar posición actual del robot R\;
+    Inicializar posición variable hit como false\;
+    \While{$R \notin P$}{
+      \eIf{$R$ libre de obstáculos en la dirección hacia P}{
+        Mover R hacia $\implies P$\;
+      }{\eIf{No se ha encontrado obstáculo anteriormente (hit=false)}{
+          Girar R en sentido horario\;
+          Marcar posición actual como punto de contacto\;
+          Establecer hit como verdadero
+        }{
+          \eIf{Si R ha vuelto al punto de contacto inicial}{
+            Mover R hacia adelante hasta superar el punto de contacto
+          }{
+            Girar R en sentido horario
+          }
+        }
+      }
+    }
+  \end{algorithm}
 
+
+  %% This declares a command \Comment
+  %% The argument will be surrounded by /* ... */
+  \SetKwComment{Comment}{/* }{ */}
+  \RestyleAlgo{ruled}
+  \begin{algorithm}
+    \caption{Algoritmo Bug2}\label{alg:two}
+    Definir punto objetivo P\;
+    Inicializar posición actual del robot R\;
+    Inicializar posición variable hit como falso\;
+    \While{R $\notin$ P}{
+      \eIf{$R$ está libre de obstáculos en la dirección hacia P}{
+        Mover R hacia $\implies$ P\;
+      }{
+        \eIf{Si no se ha encontrado obstáculo anteriormente (hit=false)}{
+          Girar R en sentido horario\;
+          Marcar posición actual como punto de contacto\;
+          Establecer hit como verdadero\;
+        }{
+          \eIf{Si R ha vuelto al punto de contacto inicial}{
+            Calcular la distancia a P desde la posición actual\;
+            \eIf{Distancia a P desde el punto de contacto }{
+              Girar R en sentido horario\;
+            }{
+              Mover R hacia adelante hasta superar el punto\;
+            }{
+              
+            }
+          }{
+            Girar R en sentido horario\;
+          }
+        }
+      }
+    }
+    
+  \end{algorithm}
+  
+  \newpage
 \item Una tercera variante, denominada TangentBug, utiliza sensores de distancia en lugar de sensores de contacto. Documentar un artículo científico que emplee el algoritmo TangentBug.
 
   El algoritmo TangentBug es una variante del algoritmo Bug utilizado para la navegación de robots móviles en entornos desconocidos o con obstáculos. A diferencia de los algoritmos Bug1 y Bug2, el algoritmo TangentBug utiliza sensores de distancia en lugar de sensores de contacto para detectar los obstáculos.\\
@@ -59,9 +122,27 @@
 
   \textbf{Autonomous Mobile Robot Navigation Using Tangent Bug Algorithm} por Arvind Yadav, Vimal Kumar, y Sanyam Anand. El artículo propone la aplicación del algoritmo TangentBug para la navegación autónoma de robots móviles en entornos desconocidos. Se describe cómo el algoritmo utiliza sensores de distancia para seguir el perfil de un obstáculo y encontrar una ruta alrededor de él.
 
-  
+  \newpage
 \item ¿Podría describir, en forma de pseudocódigo, el algoritmo necesario para seguir el perfil de un muro empleando sensores de distancia?
 
+  %% This declares a command \Comment
+  %% The argument will be surrounded by /* ... */
+  \SetKwComment{Comment}{/* }{ */}
+  \RestyleAlgo{ruled}
+  \begin{algorithm}
+    \caption{Algoritmo para seguir el perfil de un muro}\label{alg:one}
+    Inicializar variables y configurar los sensores de distancia\;
+    Obtener la lectura de los sensores de distancia y almacenarla en una variable $distancia$\;
+    \While{No se haya alcanzado el objetivo}{
+      \If{la distancia es menor que el umbral predefinido}{
+        Girar hacia la derecha o la izquierda\;
+      }
+      \If{Si la distancia es mayor que el umbral predefinido}{
+        Mover hacia adelante durante un tiempo predefinido para acercarse al muro\;
+      }
+      Actualizar la lectura de los sensores de distancia\;
+    }
+  \end{algorithm}
 
 
 \end{itemize}
