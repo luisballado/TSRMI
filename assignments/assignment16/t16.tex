@@ -45,10 +45,37 @@
 
 Una variante del VFH, es el algoritmo VFH+, que incluye en la creación del histograma polar una simplificación del modelo cinemático del robot móvil como forma de tomar en cuenta la condición no holonómica del vehículo.\\
 
-Explicar el funcionamiento del algoritmo VFH+
-
 \begin{itemize}
+  
+\item Explicar el funcionamiento del algoritmo VFH+
+
+  El algoritmo VFH+ (Vector Field Histogram Plus) es un método utilizado en la planificación de trayectorias para robots móviles en entornos desconocidos y dinámicos. Su objetivo principal es encontrar una trayectoria segura y libre de colisiones para el robot.\\
+
+  \begin{itemize}
+  \item Adquisición de datos: El robot recopila información del entorno utilizando sensores, como láser o cámaras, para detectar obstáculos y obtener información sobre la geometría del entorno.
+  \item Construcción del Histograma de Campo Vectorial (VFH): Se crea un histograma que representa la distribución de los obstáculos en el entorno. El histograma se divide en sectores angulares y se mide la distancia a los obstáculos en cada sector. Esta información se utiliza para determinar la dirección y magnitud de los vectores de campo.
+  \item Filtrado del histograma: Se aplica un proceso de filtrado al histograma para eliminar áreas con alta densidad de obstáculos, lo que reduce el riesgo de colisión y mejora la eficiencia del algoritmo. Este filtrado también permite al robot evitar obstáculos estáticos y en movimiento.
+  \item Generación del campo vectorial: Se generan vectores de campo en función del histograma filtrado. Estos vectores indican la dirección preferida para el movimiento del robot, evitando obstáculos y seleccionando trayectorias seguras.
+  \item Selección de la dirección de movimiento: Se selecciona la dirección de movimiento óptima para el robot. Esto se logra mediante la evaluación de las direcciones de los vectores de campo y la selección de la dirección con menor riesgo de colisión y mayor viabilidad.
+  \item Ajuste de la velocidad y dirección: Con base en la dirección de movimiento seleccionada, se ajusta la velocidad y dirección del robot para seguir la trayectoria deseada. Esto puede involucrar el control de los actuadores del robot, como motores o servomotores, para lograr un movimiento suave y preciso.
+  \end{itemize}
+  El algoritmo VFH+ tiene la ventaja de ser eficiente en términos computacionales y de tiempo de respuesta, lo que lo hace adecuado para aplicaciones en tiempo real. Además, su capacidad para adaptarse a entornos desconocidos y dinámicos lo convierte en una herramienta útil para la planificación de trayectorias en entornos cambiantes.
+
 \item ¿Cuál es el principio de actualización de la rejilla de ocupación local, particularmente al cambiar el robot de lugar?
+
+  En el algoritmo VFH+ (Vector Field Histogram Plus), la actualización de la rejilla de ocupación local se basa en la detección y respuesta a cambios en el entorno mientras el robot se mueve. Esta actualización se realiza para mantener una representación precisa y actualizada del entorno y evitar colisiones.\\
+
+  Cuando el robot se desplaza a una nueva posición, se llevan a cabo los siguientes pasos para actualizar la rejilla de ocupación local
+
+  \begin{itemize}
+  \item Medición del entorno: El robot utiliza sus sensores, como láser o cámaras, para realizar mediciones del nuevo entorno en su ubicación actual. Esto implica obtener información sobre la presencia y posición de obstáculos cercanos al robot.
+  \item Comparación con la rejilla existente: Se comparan las mediciones actuales del entorno con la información almacenada en la rejilla de ocupación local. Esto implica verificar si hay nuevos obstáculos detectados que no estaban presentes anteriormente en la rejilla, así como la eliminación de obstáculos que ya no están presentes.
+  \item Actualización de la rejilla: Con base en la comparación entre las mediciones actuales y la rejilla existente, se actualiza la información de ocupación en la rejilla local. Se marcan las celdas correspondientes a los obstáculos detectados como ocupadas, y se marcan como libres las celdas que no se detectan como obstáculos en la medición actual.
+  \item Consideración de la incertidumbre: Se puede tener en cuenta la incertidumbre en las mediciones del entorno al actualizar la rejilla de ocupación local. Esto implica aplicar un modelo probabilístico o de fusión de datos para tener en cuenta la confiabilidad de las mediciones y evitar actualizaciones erróneas o falsos positivos/negativos en la rejilla.
+  \end{itemize}
+
+  En resumen, el principio de actualización de la rejilla de ocupación local en el algoritmo VFH+ implica comparar las mediciones actuales del entorno con la información existente en la rejilla, actualizar la información de ocupación en la rejilla y considerar la incertidumbre en las mediciones. Esto permite mantener una representación precisa y actualizada del entorno para la planificación de trayectorias seguras y evitar colisiones.
+  
 \end{itemize}
 
 \end{document}

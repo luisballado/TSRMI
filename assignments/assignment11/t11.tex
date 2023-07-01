@@ -47,6 +47,21 @@ Estudiar el articulo \textbf{Differentially Constrained Mobile Robot Motion Plan
 
 \begin{itemize}
 \item Describir cómo funciona su planificador de trayectorias basado en retículas de estado
+
+  El planificador de trayectorias basado en retículas de estado es un enfoque comúnmente utilizado en robótica móvil para encontrar una ruta óptima desde una posición inicial del robot hasta una posición objetivo. A continuación, se describe cómo funciona generalmente este tipo de planificador:
+
+  \begin{itemize}
+  \item Discretización del espacio de configuraciones: El espacio de configuraciones del robot se divide en una retícula o malla de celdas, donde cada celda representa un estado válido para el robot. Esta discretización permite reducir la complejidad del problema al trabajar con un conjunto finito de posibles estados.
+  \item Generación de la reticula de estado: La retícula de estado se crea colocando celdas en todo el espacio de configuraciones del robot. La forma y el tamaño de las celdas pueden variar según las necesidades del problema. Por ejemplo, las celdas pueden ser rectangulares, hexagonales o de otra forma.
+  \item Definición de los vecinos de cada celda: Cada celda en la retícula se conecta con sus vecinas, formando una estructura de grafo. Esto permite que el planificador explore eficientemente las diferentes opciones de movimiento.
+  \item Establecimiento de las restricciones y costos: Se asignan restricciones y costos a las celdas de la retícula según las características del entorno y las capacidades del robot. Por ejemplo, se pueden establecer obstáculos como celdas no alcanzables o asignar costos más altos a las celdas con terreno difícil.
+  \item Búsqueda de la trayectoria óptima: Utilizando algoritmos de búsqueda, como $A^{*}$ (A-estrella), Dijkstra o RRT (Rapidly-exploring Random Trees), se busca una trayectoria óptima desde la posición inicial hasta la posición objetivo. Estos algoritmos evalúan los costos y restricciones de las celdas para determinar la mejor ruta.
+  \item Refinamiento de la trayectoria: Una vez encontrada una trayectoria inicial, se puede aplicar un proceso de refinamiento para suavizarla y hacerla más viable. Esto puede involucrar técnicas como suavizado de trayectorias, optimización de caminos o ajuste de curvas.
+  \item Ejecución de la trayectoria: Finalmente, la trayectoria resultante se utiliza para guiar el movimiento del robot hacia la posición objetivo. Esto implica seguir secuencialmente las celdas de la retícula en la trayectoria planificada.
+  \end{itemize}
+
+  En resumen, el planificador de trayectorias basado en retículas de estado divide el espacio de configuraciones del robot en una estructura de celdas discretas, permitiendo la búsqueda eficiente de rutas óptimas. Este enfoque es ampliamente utilizado en robótica móvil debido a su simplicidad, escalabilidad y capacidad para lidiar con entornos complejos.
+  
 \end{itemize}
 
 \end{document}

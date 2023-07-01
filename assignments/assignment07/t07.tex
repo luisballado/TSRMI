@@ -83,8 +83,39 @@ Para evitar calcular la forma exacta de la fontera entre el espacio libre y el e
   
 \item {¿Cuáles son las diferencias entre esta representación y la representación de rejilla de ocupación (celdas fijas)?}
 
+  La representación del C-Space discreto y la representación de rejilla de ocupación (celdas fijas) son dos enfoques diferentes para representar el espacio de configuraciones y el entorno en la robótica móvil. A continuación, se presentan las diferencias entre ambas:\\
   
-  
+Representación del C-Space Discreto:
+
+\begin{itemize}
+\item Enfoque: La representación del C-Space discreto se centra en discretizar el espacio de configuraciones del robot, dividiéndolo en celdas o puntos discretos que representan las posibles configuraciones del robot.
+\item Descripción: Cada celda o punto discreto en el C-Space representa una configuración válida del robot, y se etiqueta como "libre" o "ocupado" según la presencia de obstáculos en el entorno.
+\item Granularidad: La granularidad de la discretización puede variar según los requisitos del problema y los recursos computacionales disponibles. Puede haber una mayor o menor resolución dependiendo de la precisión necesaria.
+\item Cálculos: La representación discreta permite realizar cálculos y operaciones eficientes, como la verificación de colisiones, la planificación de trayectorias y la exploración del espacio de configuraciones.
+\end{itemize}
+
+Representación de Rejilla de Ocupación (Celdas Fijas):
+
+\begin{itemize}
+\item Enfoque: La representación de rejilla de ocupación se basa en dividir el entorno en una cuadrícula fija de celdas regulares, donde cada celda representa una región del espacio y se etiqueta como "libre" o "ocupada" según la presencia de obstáculos.
+\item Descripción: Cada celda de la rejilla de ocupación almacena información sobre la ocupación de la región correspondiente en el entorno. Puede utilizar valores binarios (ocupado/libre) o probabilidades para representar el grado de ocupación en cada celda.
+\item Resolución: La resolución de la rejilla de ocupación se determina por el tamaño de las celdas en la cuadrícula. Puede haber una mayor o menor resolución dependiendo de los requisitos del problema y la complejidad del entorno.
+\item Actualización: La representación de rejilla de ocupación se actualiza a medida que el robot explora y recibe información sensorial sobre el entorno. Se actualizan las etiquetas de ocupación de las celdas en función de la nueva información.
+\end{itemize}
+
+Diferencias:
+
+\begin{itemize}
+\item Granularidad: En la representación del C-Space discreto, la granularidad se aplica directamente al espacio de configuraciones del robot, mientras que en la rejilla de ocupación, la granularidad se aplica al espacio físico del entorno.
+\item Información detallada: La representación del C-Space discreto proporciona información detallada sobre las configuraciones válidas del robot, mientras que la rejilla de ocupación proporciona información sobre la ocupación general del entorno.
+\item Eficiencia computacional: La representación del C-Space discreto puede ser más eficiente en términos computacionales, ya que se centra en las configuraciones relevantes para el robot. La rejilla de ocupación puede requerir más recursos computacionales debido a la representación detallada del entorno.
+\item Actualización: En la representación del C-Space discreto, las actualizaciones se centran en las configuraciones del robot y la información de colisión. En la rejilla de ocupación
+\item Mayor consumo de memoria: Debido a la representación detallada del entorno, la rejilla de ocupación puede requerir más memoria para almacenar la información de ocupación de cada celda. Esto puede ser una desventaja en entornos grandes o cuando se requiere un procesamiento en tiempo real.
+\item Adaptabilidad limitada: A diferencia de la representación del C-Space discreto, donde la granularidad puede adaptarse a las necesidades del problema, la rejilla de ocupación tiene una resolución fija. Esto puede limitar la adaptabilidad a diferentes requisitos de precisión en diferentes partes del entorno.
+\end{itemize}
+
+En resumen, la representación del C-Space discreto y la representación de rejilla de ocupación ofrecen enfoques diferentes para representar el entorno en la robótica móvil. La representación del C-Space discreto se centra en las configuraciones del robot, mientras que la rejilla de ocupación se enfoca en la ocupación del entorno físico. La elección entre estos enfoques depende de las necesidades específicas de la aplicación, los recursos computacionales disponibles y el nivel de detalle requerido en la representación del entorno.
+
 \end{itemize}
 
 \end{document}

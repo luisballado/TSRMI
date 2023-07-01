@@ -45,8 +45,25 @@
 
 \begin{itemize}
 \item Documentar el pseudocódigo de los algoritmos Bug1 y Bug2.
+
+  
+  
+
 \item Una tercera variante, denominada TangentBug, utiliza sensores de distancia en lugar de sensores de contacto. Documentar un artículo científico que emplee el algoritmo TangentBug.
+
+  El algoritmo TangentBug es una variante del algoritmo Bug utilizado para la navegación de robots móviles en entornos desconocidos o con obstáculos. A diferencia de los algoritmos Bug1 y Bug2, el algoritmo TangentBug utiliza sensores de distancia en lugar de sensores de contacto para detectar los obstáculos.\\
+
+  En el algoritmo TangentBug, el robot utiliza sus sensores de distancia para medir la distancia a los obstáculos en su entorno. El objetivo principal del algoritmo es seguir la tangente de los obstáculos para alcanzar el objetivo deseado. A medida que el robot se acerca a un obstáculo, mide la distancia a ese obstáculo en varios puntos alrededor de su posición. Luego, elige el punto en el que la distancia al obstáculo es mínima y se dirige en la dirección perpendicular a ese punto, siguiendo la tangente del obstáculo. Este proceso se repite iterativamente mientras el robot se mueve hacia el objetivo.\\
+
+  La idea central del algoritmo TangentBug es utilizar la información proporcionada por los sensores de distancia para tomar decisiones de movimiento basadas en la geometría del entorno y la ubicación relativa del objetivo y los obstáculos. Esto permite que el robot navegue de manera eficiente y evite colisiones al seguir la tangente de los obstáculos en lugar de intentar rodearlos completamente.\\
+
+  \textbf{Autonomous Mobile Robot Navigation Using Tangent Bug Algorithm} por Arvind Yadav, Vimal Kumar, y Sanyam Anand. El artículo propone la aplicación del algoritmo TangentBug para la navegación autónoma de robots móviles en entornos desconocidos. Se describe cómo el algoritmo utiliza sensores de distancia para seguir el perfil de un obstáculo y encontrar una ruta alrededor de él.
+
+  
 \item ¿Podría describir, en forma de pseudocódigo, el algoritmo necesario para seguir el perfil de un muro empleando sensores de distancia?
+
+
+
 \end{itemize}
 
 \end{document}

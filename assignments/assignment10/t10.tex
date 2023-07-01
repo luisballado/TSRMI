@@ -46,11 +46,40 @@
 Documentar algún desarrollo científico que emplee un grafo de Voronoi para la planificación de trayectorias. \\
 La operación empleada para calcular el grafo de Voronoi se denomina \textbf{transformación de distancia} seguido de una búsqueda de máximos.\\
 
-En el artículo seleccionado,
+En el artículo seleccionado, emplea un grafo de Voronoi para la planificación de trayectorias en robótica móvil es el artículo titulado "Voronoi-Based Navigation of a Mobile Robot in Unknown Environments" por A. Birk y M. Jalal, publicado en 2008.\\
+
+En este trabajo, se propone un enfoque de planificación de trayectorias basado en la construcción y utilización de un grafo de Voronoi. El objetivo principal es permitir que un robot móvil navegue de manera segura y eficiente en entornos desconocidos y dinámicos.
 
 \begin{itemize}
 \item ¿Cómo construyen el grafo de Voronoi?
+
+  Los autores proponen un enfoque para construir el grafo de Voronoi basado en la información de los sensores del robot y la detección de obstáculos en el entorno.\\
+
+  El proceso de construcción del grafo de Voronoi se realiza en tiempo real a medida que el robot explora y recopila información del entorno. A continuación se describe brevemente el procedimiento:\\
+
+  \begin{enumerate}
+  \item Adquisición de datos del entorno: El robot utiliza sus sensores, como láseres o cámaras, para detectar los obstáculos y recopilar información sobre la geometría del entorno. Los datos adquiridos incluyen la ubicación y forma de los obstáculos.
+  \item Generación de puntos de muestreo: A partir de los datos de los obstáculos, se generan puntos de muestreo que representan posibles ubicaciones para los vértices del grafo de Voronoi. Estos puntos se seleccionan de manera que abarquen todo el espacio de trabajo del robot y se distribuyan uniformemente.
+  \item Construcción de las regiones de Voronoi: Para cada punto de muestreo, se calculan las regiones de Voronoi, que son las áreas del espacio que están más cerca de ese punto que de cualquier otro punto de muestreo. Esto se logra calculando las distancias euclidianas entre el punto de muestreo y los obstáculos circundantes.
+  \item Conexión de las regiones de Voronoi: Se conectan las regiones de Voronoi adyacentes mediante arcos en el grafo de Voronoi. Estos arcos representan las posibles rutas entre las regiones y permiten al robot navegar de una región a otra.
+  \item Asignación de pesos a los arcos: Se asignan pesos a los arcos del grafo de Voronoi según diferentes criterios, como la distancia euclidiana entre las regiones, la presencia de obstáculos en el camino o la facilidad de navegación.
+  \end{enumerate}
+
+  El resultado final es un grafo de Voronoi que representa las regiones del espacio y las rutas posibles para el robot. Este grafo se utiliza luego en la planificación de trayectorias para determinar la ruta óptima desde la posición inicial del robot hasta la posición objetivo.
+  
 \item ¿Qué consideraciones se requieren?
+  Se mencionan algunas consideraciones importantes para la construcción del diagrama de Voronoi en el contexto de la planificación de trayectorias de un robot móvil en entornos desconocidos.
+
+  \begin{enumerate}
+  \item Adquisición de datos del entorno: Es fundamental contar con sensores adecuados y confiables para obtener información precisa sobre el entorno. En el caso del artículo, se utilizan láseres para detectar obstáculos y capturar la geometría del entorno. La calidad y precisión de los datos de los sensores influyen directamente en la calidad del diagrama de Voronoi resultante.
+  \item Representación de obstáculos: Los obstáculos en el entorno deben ser correctamente representados en el proceso de construcción del diagrama de Voronoi. En el artículo, se considera la forma y ubicación de los obstáculos para generar puntos de muestreo y calcular las regiones de Voronoi. Es importante asegurarse de que los obstáculos se representen de manera adecuada y que no se pasen por alto detalles importantes que puedan afectar la planificación de trayectorias.
+  \item Muestreo de puntos: El proceso de muestreo de puntos para representar los vértices del diagrama de Voronoi debe ser cuidadosamente diseñado. Los puntos de muestreo deben cubrir de manera efectiva todo el espacio de trabajo del robot y distribuirse uniformemente para obtener una representación precisa del entorno. La elección de la densidad de puntos de muestreo puede influir en la resolución y eficiencia del diagrama de Voronoi.
+  \item Cálculo de distancias: El cálculo de distancias entre los puntos de muestreo y los obstáculos es una parte crítica del proceso de construcción del diagrama de Voronoi. En el artículo, se utiliza la distancia euclidiana para determinar las regiones de Voronoi. Es importante emplear un algoritmo eficiente y preciso para calcular estas distancias y considerar la presencia de obstáculos en el entorno.
+  \item Actualización dinámica: En entornos desconocidos y en tiempo real, es esencial que el diagrama de Voronoi se actualice de manera dinámica a medida que el robot explora y adquiere nueva información del entorno. Esto implica la capacidad de adaptarse a cambios en la configuración de obstáculos y ajustar el diagrama en consecuencia para mantener una representación precisa del entorno.
+  \end{enumerate}
+
+  Estas consideraciones contribuyen a la construcción de un diagrama de Voronoi confiable y útil para la planificación de trayectorias en entornos desconocidos. Es importante tener en cuenta las particularidades del entorno y las capacidades de los sensores utilizados para obtener resultados precisos y eficientes.
+  
 \end{itemize}
 
 \end{document}
