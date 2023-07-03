@@ -48,12 +48,50 @@ La implementación \textit{natural} de un algoritmo de frente de onda, empleando
 \begin{itemize}
 \item Explicar el funcionamiento del algoritmo de chamfer.
 
-  
+  El algoritmo de Chamfer, también conocido como transformada de distancia de Chamfer, es una técnica utilizada en visión por computadora y procesamiento de imágenes para calcular la distancia entre cada píxel de una imagen binaria y el objeto más cercano en la imagen.
+
+  \begin{itemize}
+  \item Preparación: Se parte de una imagen binaria donde se tiene un objeto de interés (generalmente representado por píxeles blancos) y el fondo (representado por píxeles negros). Se asigna un valor de distancia infinito a todos los píxeles del fondo y un valor de distancia cero a los píxeles del objeto.
+  \item Propagación de distancias: Se realiza una propagación iterativa de distancias desde los píxeles del objeto hacia los píxeles del fondo. En cada iteración, se calcula la distancia mínima de un píxel a sus vecinos y se actualiza el valor de distancia del píxel en consecuencia. Se utilizan diferentes distancias métricas, como la distancia de Manhattan o la distancia Euclidiana, para determinar la distancia mínima.
+  \item Retropropagación de distancias: Después de completar la propagación de distancias, se realiza una retropropagación desde los píxeles del fondo hacia los píxeles del objeto. En esta etapa, se calcula la distancia mínima de un píxel a sus vecinos y se actualiza el valor de distancia del píxel en consecuencia.
+  \item Resultado: Al finalizar el algoritmo, cada píxel de la imagen tendrá asignado un valor de distancia que representa la distancia al objeto más cercano. Estos valores de distancia se utilizan para diversas aplicaciones, como detección de bordes, segmentación de objetos o reconocimiento de patrones.
+  \end{itemize}
   
 \item Documentar un artículo científico que emplee el algoritmo de chamfer para la planificación de trayectorias (variante propuesta por M. A. Jarvis).
+
+  
+  
 \item ¿Cuáles son las consideraciones del algoritmo?
+
+  \begin{itemize}
+  \item Representación binaria
+  \item Métrica de distancia
+  \item Propagación iterativa
+  \item Complejidad computacional
+  \item Sensibilidad al ruido y detalles finos
+  \end{itemize}
+  
 \item ¿Cómo se modifica la máscara para calcular otras distancias?
+  Modificar la máscara implica cambiar la métrica de distancia y, por lo tanto, calcular distancias diferentes.\\
+
+  La máscara está compuesta por una matriz de valores, donde cada valor representa la distancia entre un píxel y los píxeles vecinos. La configuración y los valores de la máscara determinan la forma en que se calculan las distancias.\\
+
+  \begin{itemize}
+  \item Cambiar la forma de la máscara: La forma de la máscara puede variar según la métrica de distancia que se desee utilizar. Por ejemplo, para la distancia de Manhattan, la máscara puede tener forma de cruz, donde los valores de los píxeles vecinos son 1. Para la distancia Euclidiana, la máscara puede tener forma de círculo o de cuadrado con valores de píxeles vecinos calculados mediante una fórmula específica.
+  \item Ajustar los valores de la máscara: Los valores en la máscara determinan las distancias relativas entre los píxeles. Modificar los valores puede afectar la importancia relativa de los píxeles vecinos en el cálculo de la distancia. Por ejemplo, se pueden asignar diferentes valores a los píxeles vecinos según su ubicación y su importancia relativa en la métrica de distancia deseada.
+  \item Utilizar máscaras direccionales: En algunos casos, se pueden utilizar máscaras direccionales para calcular distancias en una dirección específica. Estas máscaras pueden estar diseñadas para medir la distancia en ángulos específicos o en direcciones predefinidas.
+  \end{itemize}
+  
 \item ¿Cuál es la diferencia entre las trayectorias obtenidas cuando se emplean distancias distintas?
+
+  La diferencia entre las trayectorias obtenidas al emplear distancias distintas en el algoritmo de Chamfer radica en la forma en que se calculan las distancias entre los píxeles del objeto y los píxeles del fondo.
+
+  \begin{itemize}
+  \item Dirección de propagación: Distintas métricas de distancia pueden propagar las distancias de manera diferente desde los píxeles del objeto hacia los píxeles del fondo. Esto puede resultar en trayectorias que siguen diferentes direcciones o rutas al atravesar el espacio entre el objeto y el fondo.
+  \item Sensibilidad a los detalles: Cada métrica de distancia puede ser más o menos sensible a los detalles finos en la imagen o en el entorno. Algunas métricas pueden dar más importancia a los detalles pequeños y seguir trayectorias más cercanas a los bordes del objeto, mientras que otras métricas pueden suavizar o ignorar los detalles finos y seguir trayectorias más suaves y alejadas del objeto.
+  \item Influencia del ruido: Las métricas de distancia pueden reaccionar de manera diferente al ruido presente en la imagen o en el entorno. Algunas métricas pueden ser más robustas frente al ruido y generar trayectorias más estables, mientras que otras métricas pueden ser más sensibles al ruido y producir trayectorias más fluctuantes.
+  \end{itemize}
+  
 \end{itemize}
 
 La distacia que se obtiene con el algoritmo de chamfer aproxima muy bien la distancia euclidiana y es ampliamente usada por su pequeño procesamiento ya que solo requiere 2 escaneos de n-dimensiones independiente de las dimensiones de la imagen.

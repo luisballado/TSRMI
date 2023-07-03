@@ -47,8 +47,35 @@ Si durante su viaje a la posición final el robot detectara cambios en el mapa (
 
 \begin{itemize}
 \item Explicar el funcionamiento del algoritmo $D^{*}$.
+
+  El algoritmo D* (D-star) es un algoritmo de búsqueda y planificación de trayectorias utilizado en robótica móvil para encontrar rutas óptimas y actualizadas en entornos con cambios dinámicos. A diferencia de otros algoritmos de búsqueda, como A* (A-star), el algoritmo D* permite adaptar y modificar la ruta planificada en tiempo real en respuesta a cambios en el entorno o en las condiciones del robot.\\
+
+  El algoritmo D* se basa en el concepto de \textbf{grafo de búsqueda en sentido inverso}. En lugar de comenzar desde el punto de partida y expandirse hacia el objetivo como en A*, el algoritmo D* comienza desde el punto objetivo y se expande hacia atrás, actualizando los costos y las heurísticas en cada iteración.\\
+
+  Descripción funcionamiento básico del algoritmo D*
+
+  \begin{enumerate}
+  \item Inicialización:
+  \item Bucle principal:
+  \item Actualización de celdas:
+  \item Generación de trayectorias:
+  \end{enumerate}
+  
 \item Documentar un artículo científico que emplee el algoritmo $D^{*}$ para la planificación de trayectorias.
+
+  \textbf{Multi-Objective Path-Based D* Lite} 
+  
 \item ¿Cuáles son las considereaciones del algoritmo?
+  
+  El algoritmo D* tiene la ventaja de poder reaccionar eficientemente a cambios en el entorno, ya que solo recalcula y actualiza las partes relevantes de la ruta planificada. Sin embargo, el algoritmo D* puede ser computacionalmente más costoso que otros algoritmos de búsqueda, ya que puede requerir más actualizaciones y propagaciones de costos.
+
+  \begin{itemize}
+  \item Representación del entorno: El algoritmo D* requiere una representación adecuada del entorno en el que opera el robot. Esto puede incluir un mapa o una retícula de celdas que indique la ocupación de cada posición en el espacio de trabajo. Es importante contar con una representación precisa y actualizada del entorno para lograr resultados precisos.
+  \item Eficiencia computacional: Aunque el algoritmo D* ofrece la ventaja de adaptarse a cambios en tiempo real, también puede ser computacionalmente costoso. Las actualizaciones y propagaciones de costos pueden requerir un procesamiento adicional, por lo que es importante optimizar el algoritmo y buscar formas de reducir la carga computacional, especialmente en entornos de gran escala o con cambios frecuentes.
+    
+  \item Validación de la solución: Como en cualquier algoritmo de planificación de trayectorias, es fundamental verificar y validar la solución generada por el algoritmo D*. Esto implica comprobar que la trayectoria planificada cumple con los requisitos y restricciones del problema, como evitar colisiones con obstáculos, cumplir con restricciones de movimiento del robot y alcanzar el objetivo deseado.
+  \end{itemize}
+  
 \end{itemize}
 
 \end{document}

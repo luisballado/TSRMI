@@ -44,9 +44,37 @@
 %----------------------------------------------------------------------------------------
 
 Documentar dos artículos científicos que empleen los campos de potencial artificial para la planificación de trayectorias.\\
+
+\begin{enumerate}
+\item Reinforcement Learning-Based Path Planning Algorithm for Mobile Robots\\
+
+  En este artículo, los autores presentan una combinación de campos de potencial artificial y aprendizaje por refuerzo para la planificación de trayectorias en robots móviles. Utilizan campos de potencial para generar una trayectoria inicial, y luego aplican un algoritmo de aprendizaje por refuerzo (específicamente Q-Learning) para refinar y mejorar la trayectoria basándose en la experiencia adquirida durante el movimiento. Se realizan experimentos y se comparan los resultados con otros enfoques de planificación de trayectorias para demostrar la eficiencia y la mejora obtenida mediante la combinación de campos de potencial y aprendizaje por refuerzo.
+  
+\item An improved Artificial Potential Field approach to real-time mobile robot path planning in an unknown environment\\
+
+  En este artículo, los autores proponen un enfoque basado en campos de potencial artificial para la planificación de trayectorias en entornos desconocidos. Utilizan un modelo de campo de potencial para guiar al robot hacia el objetivo mientras evita obstáculos. El enfoque se basa en la ley de atracción-repulsión del campo de potencial, donde el robot es atraído hacia el objetivo y repelido por los obstáculos. Se realizan experimentos y comparaciones con otros métodos de planificación de trayectorias para demostrar la efectividad del enfoque propuesto.
+  
+\end{enumerate}
+
 \begin{itemize}
 \item ¿Cómo son y bajo qué condiciones aparecen los mínimos locales?
+  En los campos de potencial artificial para la planificación de trayectorias, los mínimos locales pueden aparecer bajo ciertas condiciones especificas. Estas pueden variar de implementación y los parámetros utilizados en el algoritmo.
+
+  \begin{itemize}
+  \item Topología compleja del entorno: Si el entorno presenta una topología compleja con múltiples obstáculos, es más probable que aparezcan mínimos locales. Esto se debe a que los campos de potencial artificial pueden generar configuraciones donde el robot quede atrapado en cavidades o valles estrechos, lo que dificulta la salida de esos mínimos locales.
+  \item Forma y distribución de los obstáculos: La forma y la distribución de los obstáculos pueden influir en la aparición de mínimos locales. Si los obstáculos están dispuestos de manera que formen pasillos estrechos o configuraciones en forma de embudo, es más probable que el robot se quede atrapado en esos mínimos locales.
+  \item Parámetros del algoritmo: Los parámetros utilizados en el algoritmo de campo de potencial artificial pueden afectar la aparición de mínimos locales. Por ejemplo, la magnitud del campo de atracción y repulsión, la tasa de decaimiento de los campos y los pesos asignados a los diferentes componentes del campo pueden influir en la capacidad del algoritmo para evitar mínimos locales.
+  \item Inicialización del algoritmo: La posición inicial del robot también puede tener un impacto en la aparición de mínimos locales. Si el robot se inicializa cerca de un mínimo local, es más probable que el algoritmo converja hacia ese mínimo en lugar de encontrar una trayectoria óptima global.
+  \end{itemize}
+  
+  
 \item ¿Qué técnica emplean para resolverlos?
+
+  \begin{itemize}
+  \item Algoritmo de descenso de gradiente: El campo de potencial artificial se trata como una función de coste, y se utiliza el algoritmo de descenso de gradiente para encontrar el mínimo global de esta función. Este enfoque implica ajustar iterativamente la posición del robot en dirección opuesta al gradiente del campo de potencial para buscar el mínimo global.
+  \item Optimización basada en heurísticas: Se utilizan técnicas heurísticas o metaheurísticas para buscar soluciones óptimas o subóptimas en el campo de potencial artificial. Algunos ejemplos son algoritmos genéticos, búsqueda tabú, recocido simulado, enjambre de partículas, entre otros.
+  \end{itemize}
+  
 \end{itemize}
 
 \end{document}
