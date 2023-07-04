@@ -73,17 +73,17 @@
 
 \item{Identificar las funcionalidades de cada capa, así como el o los lenguajes de programación empleados en el desarrollo.}
 
-  Para el primer artículo ("Hybrid Control Architecture for Mobile Robots: Design, Implementation, and Experimental Results"), no se especifica directamente qué lenguaje de programación se utilizó en el desarrollo de la arquitectura. Sin embargo, es común en la robótica móvil utilizar lenguajes como C++ o Python para la implementación de algoritmos y controladores.\\
+  Para el primer artículo \textbf{Hybrid Control Architecture for Mobile Robots: Design, Implementation, and Experimental Results}, no se especifica directamente qué lenguaje de programación se utilizó en el desarrollo de la arquitectura. Sin embargo, es común en la robótica móvil utilizar lenguajes como C++ o Python para la implementación de algoritmos y controladores.\\
 
   En cuanto a las funcionalidades de cada capa en la arquitectura híbrida propuesta en el artículo, se mencionan los siguientes componentes:\\
 
   \begin{enumerate}
-  \item Capa Reactiva: Este componente se encarga de las tareas de bajo nivel, como el seguimiento de trayectorias y la evitación de obstáculos en tiempo real. Utiliza información de los sensores y retroalimentación directa para realizar acciones reactivas y rápidas en función de los cambios del entorno.
-  \item Capa Deliberativa: Este componente se encarga de la planificación de alto nivel, como la generación de trayectorias globales y la toma de decisiones basadas en un modelo del entorno. Utiliza información del entorno y los objetivos del robot para realizar una planificación deliberada y tomar decisiones informadas a largo plazo.
-  \item 
+  \item Navegación autónoma: Este componente se encarga de la planificación de rutas y la toma de decisiones para el robot móvil. Utiliza algoritmos de planificación de trayectorias y técnicas de evitación de obstáculos para determinar la mejor ruta hacia un objetivo dado. También se encarga de la localización y mapeo simultáneos (SLAM) para construir y actualizar un mapa del entorno.
+  \item Control de movimiento: Este componente se encarga de generar las señales de control necesarias para que el robot móvil se mueva de acuerdo con la ruta planificada. Utiliza algoritmos de control para ajustar los actuadores del robot, como los motores de las ruedas o los servomotores, y garantizar un movimiento suave y preciso.
+  \item Interacción con el entorno: Este componente se encarga de la percepción del entorno y la interacción con los objetos y personas que lo rodean. Utiliza sensores como cámaras, sensores de proximidad o lidar para recopilar información sobre el entorno. Además, puede incluir sistemas de reconocimiento de objetos, detección de obstáculos o interacción con humanos para permitir una interacción segura y eficiente con el entorno.
   \end{enumerate}
 
-  En el segundo artículo ("A Hybrid Architecture for Robust Mobile Robot Control"), también se mencionan tres componentes principales en la arquitectura híbrida propuesta:\\
+  En el segundo artículo \textbf{A Hybrid Architecture for Robust Mobile Robot Control}, también se mencionan tres componentes principales en la arquitectura híbrida propuesta:\\
 
   \begin{enumerate}
   \item Nivel de Comportamiento: Este nivel se encarga de las tareas de bajo nivel, como el seguimiento de trayectorias y la evitación de obstáculos. Utiliza algoritmos de control reactivo para responder rápidamente a eventos inesperados y cambios en el entorno.
