@@ -48,8 +48,9 @@ El uso de mapas topológicos no es muy común en robótica móvil.\\
 \item Documentar algunos desarrollos cientificos que empleen una representación topológica del medio ambiente.
 
   \begin{enumerate}
-  \item \textbf{Topological SLAM for Large-Scale Outdoor Environments:} En este desarrollo, se propone un enfoque para la construcción de mapas topológicos de grandes entornos al aire libre utilizando técnicas de SLAM (Simultaneous Localization and Mapping). El objetivo es capturar la estructura topológica del entorno, como caminos, intersecciones y puntos de referencia, en lugar de enfocarse en la representación geométrica detallada. Se utilizan sensores como cámaras y sistemas de posicionamiento para estimar la posición del robot y construir el mapa topológico.
-  \item \textbf{Topology-Based Mapping and Navigation for Autonomous Robots:} En este desarrollo, se presenta un enfoque para el mapeo y la navegación autónoma de robots utilizando representaciones topológicas del entorno. El objetivo es construir un mapa que capture las conexiones y relaciones topológicas entre las diferentes áreas del entorno, en lugar de representar la geometría detallada. Se utilizan técnicas de grafos y algoritmos de planificación de trayectorias basados en topología para permitir una navegación eficiente y robusta en entornos complejos.
+  \item \textbf{Topomap: Topological Mapping and Navigation Based on Visual SLAM Maps:} En este desarrollo, se propone un enfoque para la construcción de mapas topológicos de grandes entornos al aire libre utilizando técnicas de SLAM (Simultaneous Localization and Mapping). El objetivo es capturar la estructura topológica del entorno, como caminos, intersecciones y puntos de referencia, en lugar de enfocarse en la representación geométrica detallada. Se utilizan sensores como cámaras y sistemas de posicionamiento para estimar la posición del robot y construir el mapa topológico.
+    
+  \item \textbf{Topological Mobile Robot Navigation using Artificial Landmarks:} En este desarrollo, se presenta un enfoque para el mapeo y la navegación autónoma de robots utilizando representaciones topológicas del entorno. El objetivo es construir un mapa que capture las conexiones y relaciones topológicas entre las diferentes áreas del entorno, en lugar de representar la geometría detallada. Se utilizan técnicas de grafos y algoritmos de planificación de trayectorias basados en topología para permitir una navegación eficiente y robusta en entornos complejos.
     
   \end{enumerate}
 
@@ -58,13 +59,13 @@ El uso de mapas topológicos no es muy común en robótica móvil.\\
 \item {¿Cuáles son las consideraciones particulares para cada una de estas implementaciones?} % Numbered section
 
   \begin{enumerate}
-  \item \textbf{Topological SLAM for Large-Scale Outdoor Environments:}
+  \item \textbf{Topomap: Topological Mapping and Navigation Based on Visual SLAM Maps:}
     \begin{itemize}
     \item Escala del entorno: La implementación de este enfoque requiere lidiar con grandes entornos al aire libre, lo que puede implicar desafíos adicionales en términos de procesamiento de datos y almacenamiento del mapa topológico.
     \item Detección de puntos de referencia: Es fundamental identificar puntos de referencia significativos en el entorno para construir una estructura topológica confiable. Esto puede requerir técnicas de detección y reconocimiento de características específicas del entorno, como características geográficas, señales de tráfico u otros elementos distintivos.
     \item Integración de sensores: Para estimar la posición del robot y construir el mapa topológico, se utilizan diferentes sensores, como cámaras y sistemas de posicionamiento. La integración adecuada de estos sensores y la fusión de la información son aspectos clave a considerar en la implementación.
     \end{itemize}
-  \item \textbf{Topology-Based Mapping and Navigation for Autonomous Robots:}
+  \item \textbf{Topological Mobile Robot Navigation using Artificial Landmarks:}
 
     \begin{itemize}
     \item Representación del grafo topológico: La construcción y actualización del grafo topológico requiere definir los nodos y las conexiones entre ellos de manera adecuada. Esto implica tomar decisiones sobre la granularidad del grafo, cómo identificar y nombrar los nodos, y cómo establecer las relaciones topológicas entre ellos.

@@ -48,21 +48,18 @@
 \item{Empleando artículos y publicaciones de reconocido prestigio científico, documentar y explicar dos ejemplos de robots móviles que empleen una arquitectura híbrida para su control.}
 
   \begin{enumerate}
-  \item \textbf{Hybrid Control Architecture for Mobile Robots: Design, Implementation, and Experimental Results}
+
+  \item \textbf{Agent-based distributed architecture for mobile robot control}
     En este artículo, los autores presentan una arquitectura de control híbrida para robots móviles que combina elementos de control reactivo y planificación deliberada. La arquitectura propuesta se basa en la idea de que un control reactivo en tiempo real puede ser complementado con una planificación deliberada para lograr un equilibrio entre la reactividad y la capacidad de tomar decisiones informadas.\\
 
     La arquitectura consta de dos componentes principales: un módulo reactivo y un módulo deliberativo. El módulo reactivo se encarga de las tareas de bajo nivel, como el seguimiento de trayectorias y la evitación de obstáculos en tiempo real, utilizando sensores y retroalimentación directa. Por otro lado, el módulo deliberativo se encarga de la planificación de alto nivel, como la generación de trayectorias globales y la toma de decisiones basada en un modelo del entorno.\\
 
-    El enfoque híbrido permite que el robot reaccione rápidamente a eventos inesperados en el entorno a través del control reactivo, mientras que también puede realizar planificación y toma de decisiones más informadas utilizando el módulo deliberativo. Los autores presentan los detalles de implementación de la arquitectura en un robot móvil y realizan experimentos para evaluar su desempeño en términos de eficiencia, reactividad y capacidad de adaptación a diferentes situaciones.\\
+    El enfoque híbrido permite que el robot reaccione rápidamente a eventos inesperados en el entorno a través del control reactivo, mientras que también puede realizar planificación y toma de decisiones más informadas utilizando el módulo deliberativo. Los autores presentan los detalles de implementación de la arquitectura en un robot móvil.\\
     Los resultados experimentales muestran que la arquitectura híbrida permite un control robusto y flexible del robot móvil en entornos dinámicos y complejos. Se demuestra que la combinación de control reactivo y planificación deliberada proporciona una solución efectiva para abordar los desafíos de la navegación autónoma y la toma de decisiones en tiempo real.
     
-  \item \textbf{A Hybrid Architecture for Robust Mobile Robot Control}
+  \item \textbf{Design of Hybrid Control Architecture for Mobile Robots}
 
-    En este artículo, los autores presentan una arquitectura de control híbrida para robots móviles que combina control reactivo y planificación deliberada para lograr un control robusto y adaptativo en entornos dinámicos y desconocidos. La arquitectura propuesta se basa en la idea de que el control reactivo es esencial para reaccionar rápidamente a los cambios del entorno, mientras que la planificación deliberada permite tomar decisiones informadas y de largo plazo.\\
-
-    El enfoque híbrido se compone de tres componentes principales: el nivel de comportamiento, el nivel de reflexión y el nivel de acción. El nivel de comportamiento se encarga de las tareas de bajo nivel, como el seguimiento de trayectorias y la evitación de obstáculos, utilizando algoritmos de control reactivo. El nivel de reflexión es responsable de la toma de decisiones de alto nivel, como la planificación de rutas y la selección de comportamientos, basándose en la información del entorno y los objetivos del robot. El nivel de acción implementa las decisiones tomadas y genera comandos de control para el movimiento del robot.\\
-
-    La arquitectura híbrida permite que el robot se adapte a cambios en el entorno y en los objetivos de manera flexible y robusta. El control reactivo garantiza una respuesta rápida a eventos inesperados, mientras que la planificación deliberada proporciona una capacidad de adaptación y toma de decisiones más informada. Los autores presentan resultados experimentales en diferentes escenarios, demostrando la eficacia y robustez de la arquitectura híbrida en términos de control de robots móviles en entornos desafiantes.\\
+    En este artículo, los autores presentan una arquitectura de control híbrida para robots móviles que combina control reactivo y planificación deliberada para lograr un control robusto y adaptativo en entornos dinámicos y desconocidos. La arquitectura propuesta se basa en la idea de que el control reactivo es esencial para reaccionar rápidamente a los cambios del entorno, mientras que la planificación deliberada permite tomar decisiones de largo plazo.\\
 
     El artículo destaca la importancia de combinar el control reactivo y la planificación deliberada en una arquitectura híbrida para lograr un control robusto y adaptativo en la robótica móvil. Proporciona una base teórica sólida y presenta resultados experimentales que respaldan la eficacia y utilidad de la arquitectura híbrida en diferentes situaciones y aplicaciones.\\
 
@@ -73,17 +70,17 @@
 
 \item{Identificar las funcionalidades de cada capa, así como el o los lenguajes de programación empleados en el desarrollo.}
 
-  Para el primer artículo \textbf{Hybrid Control Architecture for Mobile Robots: Design, Implementation, and Experimental Results}, no se especifica directamente qué lenguaje de programación se utilizó en el desarrollo de la arquitectura. Sin embargo, es común en la robótica móvil utilizar lenguajes como C++ o Python para la implementación de algoritmos y controladores.\\
+  Para el primer artículo \textbf{Agent-based distributed architecture for mobile robot control}, no se especifica directamente qué lenguaje de programación se utilizó en el desarrollo de la arquitectura. Sin embargo, es común en la robótica móvil utilizar lenguajes de bajo nivel como C, C++ para la implementación de algoritmos y controladores.\\
 
   En cuanto a las funcionalidades de cada capa en la arquitectura híbrida propuesta en el artículo, se mencionan los siguientes componentes:\\
 
   \begin{enumerate}
-  \item Navegación autónoma: Este componente se encarga de la planificación de rutas y la toma de decisiones para el robot móvil. Utiliza algoritmos de planificación de trayectorias y técnicas de evitación de obstáculos para determinar la mejor ruta hacia un objetivo dado. También se encarga de la localización y mapeo simultáneos (SLAM) para construir y actualizar un mapa del entorno.
-  \item Control de movimiento: Este componente se encarga de generar las señales de control necesarias para que el robot móvil se mueva de acuerdo con la ruta planificada. Utiliza algoritmos de control para ajustar los actuadores del robot, como los motores de las ruedas o los servomotores, y garantizar un movimiento suave y preciso.
-  \item Interacción con el entorno: Este componente se encarga de la percepción del entorno y la interacción con los objetos y personas que lo rodean. Utiliza sensores como cámaras, sensores de proximidad o lidar para recopilar información sobre el entorno. Además, puede incluir sistemas de reconocimiento de objetos, detección de obstáculos o interacción con humanos para permitir una interacción segura y eficiente con el entorno.
+  \item Deliberativa: Se encarga de los patrones de comportamientos necesarios para que el robot pueda completar su objetivo.  
+  \item Reactiva: Ejecuta esos patrones de comportamiento, respetando las restricciones de tiempo.
+  \item Communication framework: Es la base que activa las interacciones necesarias entre la capa deliberativa y reactiva, enviando información sensorial a ambos niveles y acciones a los actuadores.
   \end{enumerate}
 
-  En el segundo artículo \textbf{A Hybrid Architecture for Robust Mobile Robot Control}, también se mencionan tres componentes principales en la arquitectura híbrida propuesta:\\
+  En el segundo artículo \textbf{Design of Hybrid Control Architecture for Mobile Robots}, también se mencionan tres componentes principales en la arquitectura híbrida propuesta:\\
 
   \begin{enumerate}
   \item Nivel de Comportamiento: Este nivel se encarga de las tareas de bajo nivel, como el seguimiento de trayectorias y la evitación de obstáculos. Utiliza algoritmos de control reactivo para responder rápidamente a eventos inesperados y cambios en el entorno.
@@ -91,13 +88,11 @@
   \item Nivel de Acción: Este nivel implementa las decisiones tomadas en el nivel de reflexión y genera comandos de control para el movimiento del robot.
   \end{enumerate}
 
-  En cuanto al lenguaje de programación utilizado en el desarrollo de esta arquitectura, tampoco se especifica directamente en el artículo. Sin embargo, es probable que se haya utilizado un lenguaje de programación como C++ o Python, que son comunes en el desarrollo de sistemas de control y algoritmos en robótica.\\
-
-  Es importante tener en cuenta que la elección del lenguaje de programación puede variar dependiendo de los requisitos del proyecto, las preferencias del equipo de desarrollo y la compatibilidad con las bibliotecas y plataformas utilizadas en la robótica móvil.
+  En cuanto al lenguaje de programación utilizado en el desarrollo de esta arquitectura, tampoco se especifica directamente en el artículo.
   
 \item{¿Cuál sería la razón principal por la que los procesos necesarios a un robot móvil se organizan naturalmente en tres capas de control?}
 
-  La razón principal por la que los procesos necesarios para un robot móvil se organizan naturalmente en tres capas de control es la separación de responsabilidades y la modularidad del sistema. Estas tres capas de control, que son comunes en muchas arquitecturas de control de robots móviles, permiten una distribución clara y eficiente de las tareas y funciones del robot. A continuación se describe cada capa:
+  La razón principal por la que los procesos necesarios para un robot móvil se organizan naturalmente en tres capas de control es la separación de responsabilidades y la modularidad del sistema. Estas tres capas de control, que son comunes en muchas arquitecturas de control de robots móviles, permiten una distribución clara y eficiente de las tareas y funciones del robot.
 
   \begin{enumerate}
   \item Capa de percepción: Esta es la capa inferior y se encarga de adquirir información sobre el entorno utilizando sensores como cámaras, lidar, sonar, entre otros. Su objetivo principal es obtener datos relevantes sobre la posición, la orientación, los obstáculos y otros elementos del entorno que son necesarios para la toma de decisiones.
@@ -106,10 +101,7 @@
   \end{enumerate}
 
   La principal ventaja de esta organización en tres capas es la modularidad y la flexibilidad. Cada capa tiene responsabilidades claras y puede ser desarrollada y actualizada de manera independiente. Esto facilita el desarrollo, la depuración y el mantenimiento del sistema en su conjunto. Además, esta estructura permite que diferentes algoritmos y enfoques sean aplicados en cada capa, lo que brinda la posibilidad de adaptar y mejorar el rendimiento del robot en diferentes situaciones y aplicaciones.\\
-  
-
-  En resumen, las tres capas de control en la arquitectura de un robot móvil se organizan de forma natural para separar las tareas de percepción, planificación y control, lo que proporciona modularidad, flexibilidad y la capacidad de aplicar enfoques específicos en cada capa para lograr un rendimiento óptimo del robot.
-  
+    
 \end{itemize}
   
 \end{document}

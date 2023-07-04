@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  30 JUN 2023 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.7)  4 JUL 2023 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,13 +926,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 LaTeX Font Info:    Font shape `T1/XCharter-TLF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 51.
 LaTeX Font Info:    Trying to load font information for TS1+XCharter-TLF on inp
-ut line 63.
+ut line 64.
 (/usr/local/texlive/2022/texmf-dist/tex/latex/xcharter/TS1XCharter-TLF.fd
 File: TS1XCharter-TLF.fd 2020/05/25 (msharpe) Font definitions for TS1/XCharter
 -TLF.
 )
 LaTeX Font Info:    Font shape `TS1/XCharter-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 63.
+(Font)              scaled to size 10.0pt on input line 64.
 
 [1
 
@@ -944,7 +944,7 @@ LaTeX Info: Redefining \% on input line 10.
 Here is how much of TeX's memory you used:
  20866 strings out of 478268
  396890 string characters out of 5846348
- 702056 words of memory out of 5000000
+ 701056 words of memory out of 5000000
  38666 multiletter control sequences out of 15000+600000
  502581 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -956,7 +956,7 @@ r/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Bold.pfb><
 /usr/local/texlive/2022/texmf-dist/fonts/type1/public/xcharter/XCharter-Roman.p
 fb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb
 >
-Output written on t06.pdf (2 pages, 153640 bytes).
+Output written on t06.pdf (2 pages, 153768 bytes).
 PDF statistics:
  35 PDF objects out of 1000 (max. 8388607)
  23 compressed objects within 1 object stream
