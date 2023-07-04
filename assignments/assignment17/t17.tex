@@ -46,7 +46,21 @@ Tras analizar el método propuesto por Fox et al., así como el método propuest
 
 \begin{itemize}
 \item ¿Cuáles considera que sean las principales diferencias entre ambos métodos?
+  Uno de los principales diferencias es en el enfoque de control por parte de Ramírez et al, y el enfoque mas de un sistema dinámico apartir de las ecuaciones que rigen los movimientos del robot.\\
+
+  En el enfoque de Gabriel, se propone la creación de una ley de control, estimando las velocidades y grados de orientación, haciendo un sistema con un solo punto de equilibrio que es origen 0,0.\\
+
+  Se probó que la convergencia al origen es continua y diferenciable en cualquier punto $V(0)=0$ y $V(z) >0$. Se integran algoritmos reactivos como lo es el \textbf{algoritmo bug2}, para evadir obstáculos en su camino.\\
+
+  El enfoque de Fox et al., incorpora la dinámica del robot y modifica la trayectoria con forme navega hacia el objetivo. Replantea dínamicamente para lograr el objetivo.\\
+
+  El trabajo también propone la etapa reactiva de evadir obstáculos, recalculando nuevamente la función objetivo. El autor hace mención de de acciones que forman parte de cualquier comportamiento point to goal y es la de contar con planificadores globales y planificadores locales.
+  
+  
 \item ¿Cuáles son las ventajas y desventajas de cada uno de ellos?
+
+  La principal ventaja de la versión propuesta por Ramírez et al. es el coste computacional bastante bajo, pero se comenta que puede fallar con obstaculos cercanos tiniendo un comportamiento oscilatorio. Cosa que también es posible con la versión de Fox et al., pudiendo caer a un minimo local por no poder pasar por ciertos lugares pequeños.
+  
 \end{itemize}
 
 \end{document}
